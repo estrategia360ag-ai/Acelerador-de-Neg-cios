@@ -11,7 +11,7 @@ const bonuses = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-[#0a0a0a] px-4 relative overflow-hidden">
+    <section id="pricing" className="py-24 bg-[#0a0a0a] px-4 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[150px] -z-10" />
       
       <div className="container mx-auto">

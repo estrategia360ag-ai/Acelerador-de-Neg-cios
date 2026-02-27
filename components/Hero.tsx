@@ -49,12 +49,12 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link to="/quiz" className="w-full sm:w-auto">
-              <Button size="lg" className="w-full sm:w-auto bg-[#13ec37] hover:bg-[#0fb82a] text-black font-bold">
-                FAZER DIAGNÓSTICO GRATUITO
+            <a href="#pricing" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto">
+                INSCREVA-SE AGORA
                 <ArrowRight className="ml-2" size={20} />
               </Button>
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div

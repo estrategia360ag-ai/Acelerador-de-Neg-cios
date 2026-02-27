@@ -41,14 +41,11 @@ export const Header = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link to="/quiz">
-            <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
-              Fazer Diagnóstico
+          <a href="#pricing">
+            <Button>
+              INSCREVA-SE AGORA
             </Button>
-          </Link>
-          <Button>
-            INSCREVA-SE AGORA
-          </Button>
+          </a>
         </div>
 
         <button 
@@ -62,14 +59,11 @@ export const Header = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-black border-b border-white/10 p-8 flex flex-col gap-6 animate-in slide-in-from-top duration-300">
-          <Link to="/quiz" onClick={() => setIsMenuOpen(false)}>
-            <Button variant="outline" className="w-full text-white border-white/20 hover:bg-white/10">
-              Fazer Diagnóstico
+          <a href="#pricing" onClick={() => setIsMenuOpen(false)}>
+            <Button size="lg" className="w-full">
+              INSCREVA-SE AGORA
             </Button>
-          </Link>
-          <Button size="lg" className="w-full">
-            INSCREVA-SE AGORA
-          </Button>
+          </a>
         </div>
       )}
     </header>
