@@ -1,0 +1,161 @@
+import { ArrowRight, BarChart3, ListChecks, Rocket, ShieldCheck, Search, Zap } from 'lucide-react';
+
+interface QuizLandingProps {
+  onStart: () => void;
+}
+
+export function QuizLanding({ onStart }: QuizLandingProps) {
+  return (
+    <div className="flex flex-col w-full max-w-7xl mx-auto min-h-screen bg-[#f6f8f6]">
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div className="flex items-center justify-between px-4 py-3 max-w-7xl mx-auto">
+          <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center p-1.5 rounded-lg bg-[#13ec37]/10 text-[#0fb82a]">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            <h2 className="text-sm font-bold leading-tight tracking-tight text-slate-900">Sistema Cliente Todo Dia</h2>
+          </div>
+          <a className="text-sm font-semibold text-[#0fb82a] hover:opacity-80 transition-opacity" href="#">Login</a>
+        </div>
+      </header>
+
+      <main className="flex flex-col w-full max-w-7xl mx-auto flex-1">
+        {/* Hero Section */}
+        <section className="@container">
+          <div className="flex flex-col gap-8 px-4 py-8 pt-6 md:gap-12 lg:flex-row lg:items-center lg:py-16">
+            {/* Hero Content */}
+            <div className="flex flex-col gap-6 flex-1 lg:order-1">
+              <div className="flex flex-col gap-3 text-left">
+                <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-800">
+                  <Zap className="w-4 h-4" />
+                  Resultado em 2 minutos
+                </div>
+                <h1 className="text-slate-900 text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl">
+                  Teste de Visibilidade <span className="text-[#0fb82a]">Local</span>
+                </h1>
+                <p className="text-slate-600 text-lg font-medium leading-relaxed max-w-lg">
+                  Descubra em 2 minutos por que sua empresa não aparece para novos clientes e como corrigir isso hoje.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3">
+                <button 
+                  onClick={onStart}
+                  className="group relative flex w-full max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-6 bg-[#13ec37] hover:bg-[#0fb82a] transition-colors shadow-lg shadow-[#13ec37]/25"
+                >
+                  <span className="text-slate-900 text-base font-extrabold uppercase tracking-wide z-10">Fazer Diagnóstico Gratuito</span>
+                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                </button>
+                <p className="text-xs text-slate-500 text-center max-w-[480px]">
+                  Sem necessidade de cartão de crédito.
+                </p>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="w-full flex-1 lg:order-2">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-green-900/10 border border-gray-100 bg-gray-100">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+                <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg max-w-[200px]">
+                  <div className="bg-[#13ec37]/20 p-2 rounded-full text-[#0fb82a]">
+                    <Search className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-slate-900">Análise de SEO</p>
+                    <p className="text-[10px] text-slate-500">Detectando falhas...</p>
+                  </div>
+                </div>
+                <img 
+                  alt="Business meeting analyzing growth charts on a tablet" 
+                  className="object-cover w-full h-full" 
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtMrS3O4lAzYUUUSwIOaN5YtkGhFTBdD31fO6dDg-lT666FyLQBiA2T-kQKubpXKQ5alMfn8xl9Qql6vMmXja4_MUp82JsJ0QV827NPUKw5U2vsCg_BfgV6ONt3sT725HkA7zj1eU_93ux8vjDGPhVuCfSwHIpkMtxTTGCTHJO3CAQSPSlWprCS2TZiWJOgLwZ2Fdg3uUOhSBnGhKw9GWHrK4Cikh-72qfMwzNdZLeHtComaCTNSXczFqP124lGlKfBKaOYDcHQe-i"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="px-4 py-2">
+          <div className="grid grid-cols-3 gap-3 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
+            <div className="flex flex-col items-center justify-center text-center gap-1 p-2">
+              <span className="text-[#0fb82a] text-2xl mb-1 font-bold">2.847</span>
+              <p className="text-slate-500 text-xs font-medium">Empresas</p>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center gap-1 p-2 border-l border-r border-gray-100">
+              <span className="text-[#0fb82a] text-2xl mb-1 font-bold">2 min</span>
+              <p className="text-slate-500 text-xs font-medium">Duração</p>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center gap-1 p-2">
+              <span className="text-[#0fb82a] text-2xl mb-1 font-bold">100%</span>
+              <p className="text-slate-500 text-xs font-medium">Grátis</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits Section */}
+        <section className="flex flex-col gap-8 px-4 py-12 @container">
+          <div className="flex flex-col gap-3 text-center">
+            <h2 className="text-slate-900 text-3xl font-extrabold leading-tight tracking-tight">
+              Por que fazer este teste?
+            </h2>
+            <p className="text-slate-600 text-base leading-relaxed max-w-2xl mx-auto">
+              Entenda os pontos cegos do seu negócio e descubra exatamente como atrair mais clientes recorrentes da sua região.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="flex flex-col gap-4 p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-[#0fb82a]">
+                <BarChart3 className="w-6 h-6" />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-slate-900 text-lg font-bold">Diagnóstico Preciso</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Análise detalhada da sua presença online comparada aos seus concorrentes locais diretos.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-[#0fb82a]">
+                <ListChecks className="w-6 h-6" />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-slate-900 text-lg font-bold">Plano de Ação</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Receba um checklist com passos claros e práticos para melhorar sua visibilidade imediatamente.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 p-6 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-[#0fb82a]">
+                <Rocket className="w-6 h-6" />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-slate-900 text-lg font-bold">Resultados Rápidos</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Foque nas mudanças que geram retorno financeiro e tráfego real para sua loja ou escritório.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Bottom CTA */}
+        <section className="px-4 py-8 pb-16 flex justify-center bg-gradient-to-b from-transparent to-white/50">
+          <div className="flex flex-col items-center gap-4 w-full max-w-md">
+            <button 
+              onClick={onStart}
+              className="w-full h-14 bg-[#13ec37] hover:bg-[#0fb82a] text-slate-900 text-base font-extrabold uppercase tracking-wide rounded-full shadow-xl shadow-[#13ec37]/20 transition-all active:scale-[0.98]"
+            >
+              Começar Agora
+            </button>
+            <div className="flex items-center justify-center gap-2 text-xs text-slate-500">
+              <ShieldCheck className="w-4 h-4" />
+              <span>Seus dados estão seguros conosco</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
