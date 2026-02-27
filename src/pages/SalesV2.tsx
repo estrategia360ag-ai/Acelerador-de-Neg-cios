@@ -85,8 +85,8 @@ export function SalesV2() {
           </div>
         </section>
 
-        <section id="metodo" className="py-20 px-4 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[#3B82F6]/5 dark:bg-transparent -z-10"></div>
+        <section id="metodo" className="py-24 px-4 relative overflow-hidden bg-gray-50 dark:bg-[#0a0a0a]">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#3B82F6]/5 to-transparent -z-10"></div>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">O Mecanismo dos 3 Pilares</h2>
@@ -95,31 +95,31 @@ export function SalesV2() {
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 relative">
-              <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#3B82F6]/50 to-transparent -z-10"></div>
+              <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#3B82F6]/30 to-transparent -z-10"></div>
               <div className="text-center group">
-                <div className="w-24 h-24 mx-auto bg-[#171717] border-2 border-[#3B82F6] rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)] group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-icons-round text-4xl text-white">visibility</span>
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-icons-round text-4xl text-white drop-shadow-lg">visibility</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">1. Aparecer</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 px-4">
+                <p className="text-sm text-gray-600 dark:text-gray-300 px-4 leading-relaxed">
                   Dominar a região num raio de 5km do seu negócio, aparecendo para quem realmente importa.
                 </p>
               </div>
               <div className="text-center group">
-                <div className="w-24 h-24 mx-auto bg-[#171717] border-2 border-[#3B82F6] rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)] group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-icons-round text-4xl text-white">chat</span>
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-icons-round text-4xl text-white drop-shadow-lg">chat</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">2. Atrair</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 px-4">
+                <p className="text-sm text-gray-600 dark:text-gray-300 px-4 leading-relaxed">
                   Criar ofertas irresistíveis que fazem o cliente sentir que está perdendo dinheiro se não comprar.
                 </p>
               </div>
               <div className="text-center group">
-                <div className="w-24 h-24 mx-auto bg-[#171717] border-2 border-[#3B82F6] rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(59,130,246,0.3)] group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-icons-round text-4xl text-white">shopping_cart</span>
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform duration-300">
+                  <span className="material-icons-round text-4xl text-white drop-shadow-lg">shopping_cart</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">3. Converter</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 px-4">
+                <p className="text-sm text-gray-600 dark:text-gray-300 px-4 leading-relaxed">
                   Transformar interessados em pagantes através de scripts de vendas validados no WhatsApp.
                 </p>
               </div>
@@ -132,61 +132,61 @@ export function SalesV2() {
           </div>
         </section>
 
-        <section id="resultados" className="py-20 px-4 bg-white dark:bg-[#121212]">
+        <section id="resultados" className="py-24 px-4 bg-white dark:bg-[#121212]">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">A Escolha é <span className="text-[#3B82F6]">Sua</span></h2>
+            <h2 className="text-3xl font-bold text-center mb-12 uppercase tracking-tight">A Escolha é <span className="text-[#3B82F6]">Sua</span></h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-red-500/5 border border-red-500/20 dark:bg-transparent rounded-2xl p-8 relative overflow-hidden">
+              <div className="bg-red-50 dark:bg-red-950/10 border border-red-200 dark:border-red-900/50 rounded-2xl p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4 opacity-10">
                   <span className="material-icons-round text-9xl text-red-500">cancel</span>
                 </div>
-                <h3 className="text-xl font-bold text-red-500 mb-6 flex items-center gap-2">
+                <h3 className="text-xl font-bold text-red-600 mb-6 flex items-center gap-2">
                   <span className="material-icons-round">close</span>
                   SEM O SISTEMA
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-700 dark:text-gray-400 text-sm">Refém do alcance orgânico (que morre a cada dia).</span>
+                    <span className="text-gray-600 dark:text-gray-400 text-sm">Refém do alcance orgânico (que morre a cada dia).</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-700 dark:text-gray-400 text-sm">Posta todo dia sem garantia nenhuma de retorno.</span>
+                    <span className="text-gray-600 dark:text-gray-400 text-sm">Posta todo dia sem garantia nenhuma de retorno.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-700 dark:text-gray-400 text-sm">Faturamento instável: um mês bom, outro ruim.</span>
+                    <span className="text-gray-600 dark:text-gray-400 text-sm">Faturamento instável: um mês bom, outro ruim.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-700 dark:text-gray-400 text-sm">Concorrentes dominam a atenção do seu público.</span>
+                    <span className="text-gray-600 dark:text-gray-400 text-sm">Concorrentes dominam a atenção do seu público.</span>
                   </li>
                 </ul>
               </div>
-              <div className="bg-blue-600/10 border-2 border-[#3B82F6] rounded-2xl p-8 relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-10">
-                  <span className="material-icons-round text-9xl text-[#3B82F6]">check_circle</span>
+              <div className="bg-[#3B82F6] border-2 border-blue-400 rounded-2xl p-8 relative overflow-hidden shadow-xl shadow-blue-500/20">
+                <div className="absolute top-0 right-0 p-4 opacity-20">
+                  <span className="material-icons-round text-9xl text-white">check_circle</span>
                 </div>
-                <h3 className="text-xl font-bold text-[#3B82F6] mb-6 flex items-center gap-2">
+                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
                   <span className="material-icons-round">check_circle</span>
                   COM O SISTEMA
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-[#3B82F6] text-sm mt-0.5">verified</span>
-                    <span className="text-gray-800 dark:text-gray-200 text-sm font-medium">Sua empresa é vista diariamente por quem quer comprar.</span>
+                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
+                    <span className="text-white text-sm font-medium">Sua empresa é vista diariamente por quem quer comprar.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-[#3B82F6] text-sm mt-0.5">verified</span>
-                    <span className="text-gray-800 dark:text-gray-200 text-sm font-medium">Não depende de postar dancinhas ou stories o dia todo.</span>
+                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
+                    <span className="text-white text-sm font-medium">Não depende de postar dancinhas ou stories o dia todo.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-[#3B82F6] text-sm mt-0.5">verified</span>
-                    <span className="text-gray-800 dark:text-gray-200 text-sm font-medium">Faturamento se torna estável, previsível e crescente.</span>
+                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
+                    <span className="text-white text-sm font-medium">Faturamento se torna estável, previsível e crescente.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-[#3B82F6] text-sm mt-0.5">verified</span>
-                    <span className="text-gray-800 dark:text-gray-200 text-sm font-medium">Você decide exatamente quantos clientes quer atender.</span>
+                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
+                    <span className="text-white text-sm font-medium">Você decide exatamente quantos clientes quer atender.</span>
                   </li>
                 </ul>
               </div>
@@ -232,38 +232,38 @@ export function SalesV2() {
           </div>
         </section>
 
-        <section className="py-24 px-4 bg-gray-100 dark:bg-[#0A0A0A] relative" id="offer">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg h-[400px] bg-[#3B82F6]/20 blur-[100px] rounded-full pointer-events-none"></div>
+        <section className="py-24 px-4 bg-gray-50 dark:bg-[#0A0A0A] relative" id="offer">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg h-[400px] bg-[#3B82F6]/10 blur-[100px] rounded-full pointer-events-none"></div>
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
             <div className="md:w-1/2 text-left">
-              <h2 className="text-4xl font-extrabold mb-2 uppercase">
+              <h2 className="text-4xl font-extrabold mb-2 uppercase tracking-tight text-gray-900 dark:text-white">
                 Oferta <span className="text-[#3B82F6]">Especial</span> de <br />Lançamento
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-8">
+              <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
                 Aproveite o preço promocional e comece a vender hoje mesmo. Tenha acesso vitalício ao método que vai mudar o jogo do seu negócio.
               </p>
               <div className="space-y-4 mb-8">
-                <h3 className="text-xl font-bold text-white mb-4">O que você leva:</h3>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">O que você leva:</h3>
                 <div className="flex items-center gap-3">
                   <span className="material-icons-round text-[#3B82F6]">check_circle</span>
-                  <span className="text-sm">Acesso vitalício ao treinamento completo</span>
+                  <span className="text-gray-700 dark:text-gray-300">Acesso vitalício ao treinamento completo</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="material-icons-round text-[#3B82F6]">check_circle</span>
-                  <span className="text-sm">Todas as atualizações futuras sem custo</span>
+                  <span className="text-gray-700 dark:text-gray-300">Todas as atualizações futuras sem custo</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="material-icons-round text-[#3B82F6]">check_circle</span>
-                  <span className="text-sm">Suporte direto na plataforma</span>
+                  <span className="text-gray-700 dark:text-gray-300">Suporte direto na plataforma</span>
                 </div>
-                <div className="bg-gray-800/50 p-4 rounded-lg mt-6 border border-gray-700">
-                  <h4 className="text-[#3B82F6] font-bold text-sm mb-2 uppercase flex items-center gap-2">
+                <div className="bg-white dark:bg-gray-800/50 p-6 rounded-2xl mt-8 border border-gray-200 dark:border-gray-700 shadow-sm">
+                  <h4 className="text-[#3B82F6] font-bold text-sm mb-4 uppercase flex items-center gap-2 tracking-wider">
                     <span className="material-icons-round text-sm">card_giftcard</span> Bônus Exclusivos:
                   </h4>
-                  <ul className="text-xs text-gray-400 space-y-2">
-                    <li className="flex items-center gap-2"><span className="material-icons-round text-[10px]">group</span> Comunidade Exclusiva de Empreendedores</li>
-                    <li className="flex items-center gap-2"><span className="material-icons-round text-[10px]">description</span> Planilha de Cálculo de ROI e Lucro</li>
-                    <li className="flex items-center gap-2"><span className="material-icons-round text-[10px]">settings</span> Checklist de Configuração de Conta</li>
+                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-3">
+                    <li className="flex items-center gap-3"><span className="material-icons-round text-primary text-xs">group</span> Comunidade Exclusiva de Empreendedores</li>
+                    <li className="flex items-center gap-3"><span className="material-icons-round text-primary text-xs">description</span> Planilha de Cálculo de ROI e Lucro</li>
+                    <li className="flex items-center gap-3"><span className="material-icons-round text-primary text-xs">settings</span> Checklist de Configuração de Conta</li>
                   </ul>
                 </div>
               </div>
