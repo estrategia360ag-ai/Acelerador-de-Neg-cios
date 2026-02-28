@@ -65,22 +65,55 @@ export function Sales() {
 
         {/* CTA Section */}
         <div className="mt-12 flex flex-col items-center gap-6">
-          <a className="w-full max-w-md bg-[#13ec37] hover:bg-[#13ec37]/90 text-[#102213] py-6 rounded-full text-xl md:text-2xl font-black tracking-tight shadow-[0_20px_40px_rgba(19,236,55,0.3)] hover:translate-y-[-2px] transition-all flex flex-col items-center" href="#">
-            <span>QUERO CLIENTES TODO DIA</span>
-            <span className="text-sm font-bold opacity-80 mt-1 uppercase">12x de R$ 19,70</span>
-          </a>
-          <div className="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-500">
-            <div className="flex items-center gap-1.5">
-              <ShieldCheck className="text-[#13ec37] w-5 h-5" />
-              Compra 100% Segura
+          <div className="w-full max-w-2xl bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-[#13ec37]/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-4 opacity-5">
+              <Package className="w-32 h-32 text-[#13ec37]" />
             </div>
-            <div className="flex items-center gap-1.5">
-              <Award className="text-[#13ec37] w-5 h-5" />
-              7 Dias de Garantia
-            </div>
-            <div className="flex items-center gap-1.5">
-              <CalendarCheck className="text-[#13ec37] w-5 h-5" />
-              Acesso Imediato
+            
+            <h3 className="text-2xl font-black mb-8 flex items-center gap-3">
+              <Package className="text-[#13ec37] w-8 h-8" />
+              TUDO QUE ESTÁ INCLUÍDO:
+            </h3>
+            
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-left">
+              {[
+                "Sistema completo em 5 módulos",
+                "15 modelos de anúncio prontos",
+                "Checklist campanha passo a passo",
+                "Calculadora de investimento",
+                "Comunidade WhatsApp exclusiva",
+                "Acesso vitalício",
+                "Atualizações gratuitas"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <ShieldCheck className="text-[#13ec37] w-5 h-5 shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <div className="border-t border-slate-100 pt-8 text-center">
+              <p className="text-slate-400 line-through text-lg mb-2">De R$ 497,00 por apenas</p>
+              <div className="flex justify-center items-baseline gap-2 mb-8">
+                <span className="text-4xl md:text-6xl font-black text-slate-900">R$ 197</span>
+                <span className="text-slate-500 font-bold">ou 12x R$ 19,70</span>
+              </div>
+              
+              <a className="w-full bg-[#13ec37] hover:bg-[#13ec37]/90 text-[#102213] py-6 rounded-full text-xl md:text-2xl font-black tracking-tight shadow-[0_20px_40px_rgba(19,236,55,0.3)] hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" href="#">
+                <Zap className="w-6 h-6 fill-current" />
+                ATIVAR MEU SISTEMA AGORA
+              </a>
+              
+              <div className="mt-6 flex flex-wrap justify-center gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                <div className="flex items-center gap-1.5">
+                  <Lock className="w-4 h-4" />
+                  Garantia de 7 dias
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Shield className="w-4 h-4" />
+                  Pagamento 100% seguro
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -146,6 +179,49 @@ export function Sales() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-24 px-4 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black text-center mb-16 tracking-tight">Dúvidas Frequentes</h2>
+        <div className="space-y-4">
+          {[
+            {
+              q: "Funciona pra qualquer cidade?",
+              a: "Sim. O sistema funciona para qualquer cidade do Brasil — de 5.000 a 5 milhões de habitantes."
+            },
+            {
+              q: "Preciso entender de tecnologia?",
+              a: "Não. Se você sabe usar WhatsApp, consegue usar o sistema. Tudo é mostrado passo a passo com telas gravadas."
+            },
+            {
+              q: "Quanto preciso investir em anúncios?",
+              a: "A partir de R$ 6/dia (R$ 180/mês) já dá pra ter resultados. Dentro do sistema, você aprende exatamente quanto investir pro seu tipo de negócio."
+            },
+            {
+              q: "Em quanto tempo vejo resultado?",
+              a: "Muitos alunos recebem as primeiras mensagens no WhatsApp em 24–48 horas após ativar o primeiro anúncio."
+            },
+            {
+              q: "Já tentei impulsionar no Instagram e não funcionou.",
+              a: "Normal. O botão \"Impulsionar\" é a forma ERRADA de anunciar. No sistema, você aprende a fazer pelo caminho certo — que custa menos e traz mais resultado."
+            },
+            {
+              q: "E se não funcionar pra mim?",
+              a: "Você tem 7 dias de garantia. Se não gostar, devolvemos 100%."
+            }
+          ].map((item, i) => (
+            <details key={i} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300 open:shadow-lg open:border-[#13ec37]/30">
+              <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-800 list-none">
+                {item.q}
+                <Zap className="w-5 h-5 text-[#13ec37] transition-transform duration-300 group-open:rotate-180" />
+              </summary>
+              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+                {item.a}
+              </div>
+            </details>
+          ))}
         </div>
       </section>
 

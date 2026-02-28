@@ -90,11 +90,11 @@ export const quizQuestions: Question[] = [
     id: 4,
     title: 'Você já fez algum anúncio pago no Facebook, Instagram ou Google?',
     options: [
-      { label: '❌ Nunca fiz', points: 0 },
-      { label: '🔄 Já fiz mas parei (não funcionou)', points: 1 },
-      { label: '⚡ Fiz o botão "Impulsionar" do Instagram', points: 1 },
-      { label: '✅ Faço pelo Gerenciador de Anúncios', points: 3 },
-      { label: '🏢 Tenho um gestor de tráfego', points: 4 },
+      { label: '❌ Nunca fiz (não sei como)', points: 0 },
+      { label: '🔄 Já fiz mas parei (não funcionou ou era a agência que fazia)', points: 1 },
+      { label: '⚡ Já usei o botão "Impulsionar" do Instagram', points: 1 },
+      { label: '🏢 Pago agência/gestor mas não sei se tá funcionando', points: 2 },
+      { label: '✅ Faço eu mesmo pelo Gerenciador de Anúncios', points: 4 },
     ],
   },
   {
@@ -130,12 +130,12 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 8,
-    title: 'Se existisse um sistema simples que fizesse sua empresa aparecer todo dia para quem mora na sua cidade, você:',
+    title: 'Se existisse um sistema simples que TE ENSINASSE a criar seus próprios anúncios e atrair clientes da sua cidade — sem precisar de agência — você:',
     options: [
-      { label: '🔥 Quero isso pra ontem', points: 4 },
+      { label: '🔥 Quero aprender isso pra ontem', points: 4 },
       { label: '🤔 Teria interesse em conhecer', points: 3 },
       { label: '💰 Depende do preço', points: 2 },
-      { label: '❌ Não tenho interesse agora', points: 0 },
+      { label: '❌ Prefiro pagar alguém pra fazer', points: 0 },
     ],
   },
 ];

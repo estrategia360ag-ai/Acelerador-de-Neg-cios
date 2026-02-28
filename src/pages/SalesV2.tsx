@@ -2,392 +2,551 @@ import React from 'react';
 
 export function SalesV2() {
   return (
-    <div className="bg-gray-100 dark:bg-[#0A0A0A] text-gray-900 dark:text-gray-100 transition-colors duration-200 min-h-screen font-sans" style={{ minHeight: 'max(884px, 100dvh)' }}>
-      <header className="fixed w-full z-50 top-0 left-0 bg-gray-100/90 dark:bg-[#0A0A0A]/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="bg-[#f6f8f6] dark:bg-[#0A0A0A] text-slate-900 dark:text-slate-100 min-h-screen font-['Manrope'] antialiased overflow-x-hidden">
+      {/* Header */}
+      <header className="fixed w-full z-50 top-0 left-0 bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+        <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="material-icons-round text-[#3B82F6] text-2xl">rocket_launch</span>
-            <span className="font-bold text-lg tracking-tight"><span className="text-[#3B82F6]">CLIENTE TODO DIA</span></span>
+            <span className="material-symbols-outlined text-[#13ec37] text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
+            <span className="font-extrabold text-lg tracking-tight">CLIENTE TODO DIA</span>
           </div>
-          <div className="hidden md:flex gap-8 text-sm font-medium text-gray-500 dark:text-gray-400">
-            <a className="hover:text-[#3B82F6] transition-colors" href="#metodo">O Método</a>
-            <a className="hover:text-[#3B82F6] transition-colors" href="#resultados">Resultados</a>
-            <a className="hover:text-[#3B82F6] transition-colors" href="#faq">FAQ</a>
-          </div>
-          <a className="hidden sm:block bg-[#3B82F6] hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all" href="#offer">
+          <a href="#offer" className="bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-[#13ec37]/20">
             Começar Agora
           </a>
         </div>
       </header>
 
-      <main>
-        <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-[#3B82F6]/20 blur-[120px] rounded-full -z-10"></div>
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3B82F6]/10 border border-[#3B82F6]/20 text-[#3B82F6] text-xs font-semibold uppercase tracking-wider mb-6">
-              <span className="material-icons-round text-sm">bolt</span>
-              Novo Método de Tráfego Local
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-              Pare de depender do <br className="hidden md:block" />
-              <span className="bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">movimento de rua.</span>
+      <main className="pt-20">
+        {/* Section 1: HERO */}
+        <section className="relative pt-16 pb-20 px-4 overflow-hidden">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-[#13ec37]/10 blur-[120px] rounded-full -z-10"></div>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-[#13ec37] dark:text-[#13ec37] text-xs md:text-sm font-bold uppercase tracking-widest mb-6 px-4">
+              Para donos de negócio local que estão CANSADOS de depender de agência, gestor de tráfego ou da sorte para vender
+            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-slate-900 dark:text-white">
+              Aprenda a Criar Suas Próprias Campanhas e Receba <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#13ec37] to-emerald-600">Clientes Todo Dia</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Ative o <strong>Cliente Todo Dia™</strong> e transforme anúncios no Facebook e Instagram em uma máquina previsível de vendas para o seu negócio local.
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+              O Cliente Todo Dia™ é o sistema de 3 passos que ensina donos de negócio local a criarem seus próprios anúncios no Instagram e Facebook — gastando a partir de R$ 6/dia — e lotarem a agenda sem depender de ninguém.
             </p>
             <div className="flex flex-col gap-4 items-center">
-              <a href="#offer" className="w-full sm:w-auto bg-[#3B82F6] hover:bg-blue-600 text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg shadow-blue-500/30 transition-all transform hover:scale-105 flex items-center justify-center gap-2">
-                QUERO CLIENTES TODOS OS DIAS
-                <span className="material-icons-round">arrow_forward</span>
+              <a href="#offer" className="w-full sm:w-auto bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-lg font-black py-5 px-10 rounded-2xl shadow-xl shadow-[#13ec37]/30 transition-all transform hover:scale-105 flex flex-col items-center justify-center gap-1">
+                <span className="flex items-center gap-2">
+                  QUERO CRIAR MINHAS CAMPANHAS <span className="material-symbols-outlined font-bold">arrow_forward</span>
+                </span>
+                <span className="text-sm font-bold opacity-80 uppercase tracking-wider">R$ 197 | 12x de R$ 19,70</span>
               </a>
-              <div className="flex items-center gap-6 text-xs text-gray-500 dark:text-gray-500 font-medium mt-2">
-                <span className="flex items-center gap-1"><span className="material-icons-round text-green-500 text-sm">check_circle</span> Sem agências caras</span>
-                <span className="flex items-center gap-1"><span className="material-icons-round text-green-500 text-sm">check_circle</span> Método 100% prático</span>
+              <div className="flex items-center gap-6 text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-widest mt-4">
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[#13ec37] text-sm">verified_user</span> Acesso Vitalício</span>
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[#13ec37] text-sm">lock</span> Pagamento Seguro</span>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-16 px-4 bg-gray-50 dark:bg-[#121212]">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Até quando você vai queimar <span className="bg-gradient-to-r from-[#EF4444] to-[#F87171] bg-clip-text text-transparent">dinheiro</span> com postagens que não vendem?
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white dark:bg-[#171717] p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm">
-                <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <span className="material-icons-round text-red-500">trending_down</span>
-                </div>
-                <h3 className="text-lg font-bold mb-2">Invisibilidade Digital</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Você posta todo dia, faz stories, mas o engajamento é baixo e as vendas não acontecem.
-                </p>
-              </div>
-              <div className="bg-white dark:bg-[#171717] p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm">
-                <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <span className="material-icons-round text-red-500">money_off</span>
-                </div>
-                <h3 className="text-lg font-bold mb-2">Dependência da Sorte</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Ficar esperando o cliente passar na porta ou te indicar é a receita certa para falir.
-                </p>
-              </div>
-              <div className="bg-white dark:bg-[#171717] p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm">
-                <div className="w-12 h-12 bg-red-500/10 rounded-lg flex items-center justify-center mb-4">
-                  <span className="material-icons-round text-red-500">schedule</span>
-                </div>
-                <h3 className="text-lg font-bold mb-2">Falta de Tempo</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  Você cuida do negócio, do financeiro e não tem tempo para aprender marketing complexo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="metodo" className="py-24 px-4 relative overflow-hidden bg-gray-50 dark:bg-[#0a0a0a]">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#3B82F6]/5 to-transparent -z-10"></div>
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">O Mecanismo dos 3 Pilares</h2>
-              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Não é mágica, é método. O Cliente Todo Dia™ se baseia em três etapas fundamentais para garantir fluxo constante de vendas.
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 relative">
-              <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-[#3B82F6]/30 to-transparent -z-10"></div>
-              <div className="text-center group">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-icons-round text-4xl text-white drop-shadow-lg">visibility</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">1. Aparecer</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 px-4 leading-relaxed">
-                  Dominar a região num raio de 5km do seu negócio, aparecendo para quem realmente importa.
-                </p>
-              </div>
-              <div className="text-center group">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-icons-round text-4xl text-white drop-shadow-lg">chat</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">2. Atrair</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 px-4 leading-relaxed">
-                  Criar ofertas irresistíveis que fazem o cliente sentir que está perdendo dinheiro se não comprar.
-                </p>
-              </div>
-              <div className="text-center group">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#3B82F6] to-[#2563EB] rounded-full flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-icons-round text-4xl text-white drop-shadow-lg">shopping_cart</span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">3. Converter</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 px-4 leading-relaxed">
-                  Transformar interessados em pagantes através de scripts de vendas validados no WhatsApp.
-                </p>
-              </div>
-            </div>
-            <div className="mt-12 text-center">
-              <a className="inline-block bg-[#3B82F6] hover:bg-blue-600 text-white px-8 py-3 rounded-full font-bold shadow-lg transition-colors" href="#offer">
-                Conhecer o Método Agora
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section id="resultados" className="py-24 px-4 bg-white dark:bg-[#121212]">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 uppercase tracking-tight">A Escolha é <span className="text-[#3B82F6]">Sua</span></h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-red-50 dark:bg-red-950/10 border border-red-200 dark:border-red-900/50 rounded-2xl p-8 relative overflow-hidden">
-                <div className="absolute top-0 right-0 p-4 opacity-10">
-                  <span className="material-icons-round text-9xl text-red-500">cancel</span>
-                </div>
-                <h3 className="text-xl font-bold text-red-600 mb-6 flex items-center gap-2">
-                  <span className="material-icons-round">close</span>
-                  SEM O SISTEMA
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Refém do alcance orgânico (que morre a cada dia).</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Posta todo dia sem garantia nenhuma de retorno.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Faturamento instável: um mês bom, outro ruim.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0"></div>
-                    <span className="text-gray-600 dark:text-gray-400 text-sm">Concorrentes dominam a atenção do seu público.</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-[#3B82F6] border-2 border-blue-400 rounded-2xl p-8 relative overflow-hidden shadow-xl shadow-blue-500/20">
-                <div className="absolute top-0 right-0 p-4 opacity-20">
-                  <span className="material-icons-round text-9xl text-white">check_circle</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                  <span className="material-icons-round">check_circle</span>
-                  COM O SISTEMA
-                </h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
-                    <span className="text-white text-sm font-medium">Sua empresa é vista diariamente por quem quer comprar.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
-                    <span className="text-white text-sm font-medium">Não depende de postar dancinhas ou stories o dia todo.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
-                    <span className="text-white text-sm font-medium">Faturamento se torna estável, previsível e crescente.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="material-icons-round text-blue-100 text-sm mt-0.5">verified</span>
-                    <span className="text-white text-sm font-medium">Você decide exatamente quantos clientes quer atender.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-gray-100 dark:bg-black/50">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-lg uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-8 font-semibold">Funciona Perfeitamente Para:</h3>
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-14 h-14 bg-[#171717] rounded-lg flex items-center justify-center border border-gray-700">
-                  <span className="material-icons-round text-gray-400">storefront</span>
-                </div>
-                <span className="text-xs font-medium">Lojas Físicas</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-14 h-14 bg-[#171717] rounded-lg flex items-center justify-center border border-gray-700">
-                  <span className="material-icons-round text-gray-400">medical_services</span>
-                </div>
-                <span className="text-xs font-medium">Clínicas</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-14 h-14 bg-[#171717] rounded-lg flex items-center justify-center border border-gray-700">
-                  <span className="material-icons-round text-gray-400">restaurant</span>
-                </div>
-                <span className="text-xs font-medium">Delivery</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-14 h-14 bg-[#171717] rounded-lg flex items-center justify-center border border-gray-700">
-                  <span className="material-icons-round text-gray-400">content_cut</span>
-                </div>
-                <span className="text-xs font-medium">Estética</span>
-              </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-14 h-14 bg-[#171717] rounded-lg flex items-center justify-center border border-gray-700">
-                  <span className="material-icons-round text-gray-400">fitness_center</span>
-                </div>
-                <span className="text-xs font-medium">Academias</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-24 px-4 bg-gray-50 dark:bg-[#0A0A0A] relative" id="offer">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg h-[400px] bg-[#3B82F6]/10 blur-[100px] rounded-full pointer-events-none"></div>
-          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
-            <div className="md:w-1/2 text-left">
-              <h2 className="text-4xl font-extrabold mb-2 uppercase tracking-tight text-gray-900 dark:text-white">
-                Oferta <span className="text-[#3B82F6]">Especial</span> de <br />Lançamento
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
-                Aproveite o preço promocional e comece a vender hoje mesmo. Tenha acesso vitalício ao método que vai mudar o jogo do seu negócio.
-              </p>
-              <div className="space-y-4 mb-8">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">O que você leva:</h3>
-                <div className="flex items-center gap-3">
-                  <span className="material-icons-round text-[#3B82F6]">check_circle</span>
-                  <span className="text-gray-700 dark:text-gray-300">Acesso vitalício ao treinamento completo</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-icons-round text-[#3B82F6]">check_circle</span>
-                  <span className="text-gray-700 dark:text-gray-300">Todas as atualizações futuras sem custo</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="material-icons-round text-[#3B82F6]">check_circle</span>
-                  <span className="text-gray-700 dark:text-gray-300">Suporte direto na plataforma</span>
-                </div>
-                <div className="bg-white dark:bg-gray-800/50 p-6 rounded-2xl mt-8 border border-gray-200 dark:border-gray-700 shadow-sm">
-                  <h4 className="text-[#3B82F6] font-bold text-sm mb-4 uppercase flex items-center gap-2 tracking-wider">
-                    <span className="material-icons-round text-sm">card_giftcard</span> Bônus Exclusivos:
-                  </h4>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-3">
-                    <li className="flex items-center gap-3"><span className="material-icons-round text-primary text-xs">group</span> Comunidade Exclusiva de Empreendedores</li>
-                    <li className="flex items-center gap-3"><span className="material-icons-round text-primary text-xs">description</span> Planilha de Cálculo de ROI e Lucro</li>
-                    <li className="flex items-center gap-3"><span className="material-icons-round text-primary text-xs">settings</span> Checklist de Configuração de Conta</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-1/2 w-full">
-              <div className="bg-[#3B82F6] rounded-2xl p-1 shadow-2xl shadow-[#3B82F6]/40 relative">
-                <div className="absolute -top-4 right-4 bg-[#FACC15] text-black font-bold text-xs uppercase px-3 py-1 rounded-full shadow-md">
-                  Mais Vendido
-                </div>
-                <div className="bg-[#3B82F6] rounded-xl p-8 text-center text-white h-full flex flex-col justify-between">
-                  <div>
-                    <p className="text-blue-100 text-sm mb-2 line-through">De R$ 497,00</p>
-                    <p className="text-blue-100 text-sm mb-1">Por apenas 12x de</p>
-                    <div className="flex justify-center items-baseline mb-2">
-                      <span className="text-2xl font-medium mr-1">R$</span>
-                      <span className="text-6xl font-extrabold tracking-tighter">19,70</span>
-                    </div>
-                    <p className="text-blue-100 text-xs mb-8">ou R$ 197,00 à vista no PIX ou Cartão.</p>
-                  </div>
-                  <button className="w-full bg-[#FACC15] hover:bg-yellow-300 text-gray-900 font-extrabold text-lg py-4 px-6 rounded-lg shadow-lg transform transition hover:translate-y-[-2px] hover:shadow-xl uppercase mb-4">
-                    QUERO ME INSCREVER AGORA
-                  </button>
-                  <div className="flex justify-center items-center gap-2 text-blue-100 text-[10px] font-medium uppercase tracking-wide">
-                    <span className="material-icons-round text-sm">verified_user</span>
-                    7 Dias de Garantia Incondicional
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="faq" className="py-20 px-4 bg-[#121212] border-t border-gray-800">
+        {/* Section 2: DORES */}
+        <section className="py-20 px-4 bg-white dark:bg-[#0d0d0d] border-y border-gray-100 dark:border-gray-800">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-2">Dúvidas <span className="text-[#3B82F6]">Frequentes</span></h2>
-            <p className="text-gray-400 text-center text-sm mb-12">Ainda tem alguma dúvida? Confira as respostas abaixo.</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-slate-900 dark:text-white tracking-tight">
+              Isso soa familiar?
+            </h2>
+            <div className="space-y-4 mb-12">
+              {[
+                "Paga agência e não sabe se os anúncios funcionam?",
+                "Já impulsionou post e jogou dinheiro fora?",
+                "Depende de indicação e sorte pra vender?",
+                "Quer anunciar mas não sabe como?",
+                "Posta no Instagram mas ninguém vê?",
+                "Tem medo de mexer no Gerenciador de Anúncios?",
+                "Sente que poderia atrair mais clientes mas não sabe por onde começar?"
+              ].map((pain, i) => (
+                <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-100 dark:border-white/5">
+                  <span className="material-symbols-outlined text-red-500 font-bold">close</span>
+                  <p className="text-slate-700 dark:text-slate-300 font-semibold">{pain}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center p-8 rounded-3xl bg-[#13ec37]/5 border-2 border-dashed border-[#13ec37]/30">
+              <p className="text-xl md:text-2xl font-black text-slate-900 dark:text-white italic leading-tight">
+                "O problema não é seu produto. É que ninguém te ensinou a fazer ele <span className="text-[#13ec37]">APARECER</span>."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3: CUSTO DA DEPENDÊNCIA */}
+        <section className="py-24 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">
+                ⚠️ Quanto custa DEPENDER dos outros?
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Scenario 1 */}
+              <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                <h3 className="text-xs font-black text-red-500 uppercase tracking-widest mb-4">CENÁRIO 1</h3>
+                <p className="text-lg font-bold mb-6 text-slate-900 dark:text-white">Você paga agência</p>
+                <div className="space-y-3 text-sm mb-8">
+                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                    <span className="text-slate-500">Mensalidade</span>
+                    <span className="font-bold">R$ 1.500/mês</span>
+                  </div>
+                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                    <span className="text-slate-500">Contrato mín.</span>
+                    <span className="font-bold">6 meses</span>
+                  </div>
+                  <div className="flex justify-between pt-2">
+                    <span className="text-slate-500">Total</span>
+                    <span className="font-black text-red-500">R$ 9.000</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-bold text-red-500 bg-red-50 dark:bg-red-900/20 p-3 rounded-xl">
+                  <span className="material-symbols-outlined text-sm">cancel</span>
+                  Resultado garantido? NÃO
+                </div>
+              </div>
+
+              {/* Scenario 2 */}
+              <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                <h3 className="text-xs font-black text-red-500 uppercase tracking-widest mb-4">CENÁRIO 2</h3>
+                <p className="text-lg font-bold mb-6 text-slate-900 dark:text-white">Você não anuncia</p>
+                <div className="space-y-3 text-sm mb-8">
+                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                    <span className="text-slate-500">Clientes perdidos</span>
+                    <span className="font-bold">3/dia</span>
+                  </div>
+                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                    <span className="text-slate-500">Ticket médio</span>
+                    <span className="font-bold">R$ 80</span>
+                  </div>
+                  <div className="flex justify-between pt-2">
+                    <span className="text-slate-500">Perda anual</span>
+                    <span className="font-black text-red-500">R$ 86.400</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-50 dark:bg-white/5 p-3 rounded-xl">
+                  <span className="material-symbols-outlined text-sm">trending_down</span>
+                  Invisível para o mercado
+                </div>
+              </div>
+
+              {/* Scenario 3 */}
+              <div className="bg-[#13ec37] p-8 rounded-3xl border-4 border-white dark:border-slate-800 shadow-2xl shadow-[#13ec37]/30 transform md:scale-105">
+                <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest mb-4">CENÁRIO 3</h3>
+                <p className="text-lg font-bold mb-6 text-slate-900">VOCÊ aprende e faz</p>
+                <div className="space-y-3 text-sm mb-8 text-slate-900/80">
+                  <div className="flex justify-between border-b border-slate-900/10 pb-2">
+                    <span className="font-medium">Invest. mensal</span>
+                    <span className="font-bold">R$ 180 (R$ 6/dia)</span>
+                  </div>
+                  <div className="flex justify-between border-b border-slate-900/10 pb-2">
+                    <span className="font-medium">Curso (uma vez)</span>
+                    <span className="font-bold">R$ 197</span>
+                  </div>
+                  <div className="flex justify-between pt-2">
+                    <span className="font-medium">Controle</span>
+                    <span className="font-black">100% SEU</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-900 bg-white/40 p-3 rounded-xl">
+                  <span className="material-symbols-outlined text-sm">check_circle</span>
+                  Resultado: Clientes todo dia
+                </div>
+              </div>
+            </div>
+            <p className="text-center mt-12 text-xl font-bold text-slate-900 dark:text-white">Qual cenário faz mais sentido?</p>
+          </div>
+        </section>
+
+        {/* Section 4: COMPARAÇÃO */}
+        <section className="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#13ec37]/10 blur-[120px] rounded-full"></div>
+          <div className="max-w-5xl mx-auto relative z-10">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 tracking-tight">
+              Três caminhos. Só um faz sentido.
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 rounded-3xl overflow-hidden backdrop-blur-sm">
+              {/* Path 1 */}
+              <div className="p-8 border-b md:border-b-0 md:border-r border-white/10 bg-white/5">
+                <h3 className="text-red-400 font-black mb-6 flex items-center gap-2">
+                  <span className="material-symbols-outlined">cancel</span> NÃO ANUNCIAR
+                </h3>
+                <ul className="space-y-4 text-sm text-slate-400">
+                  <li className="flex items-center gap-2">• Zero controle</li>
+                  <li className="flex items-center gap-2">• Zero previsibilidade</li>
+                  <li className="flex items-center gap-2">• Depende da sorte</li>
+                  <li className="flex items-center gap-2">• Concorrente na frente</li>
+                  <li className="flex items-center gap-2">• Loja vazia</li>
+                </ul>
+              </div>
+              {/* Path 2 */}
+              <div className="p-8 border-b md:border-b-0 md:border-r border-white/10 bg-white/5">
+                <h3 className="text-red-400 font-black mb-6 flex items-center gap-2">
+                  <span className="material-symbols-outlined">cancel</span> PAGAR AGÊNCIA
+                </h3>
+                <ul className="space-y-4 text-sm text-slate-400">
+                  <li className="flex items-center gap-2">• R$ 1.500/mês</li>
+                  <li className="flex items-center gap-2">• Contrato de 6 meses</li>
+                  <li className="flex items-center gap-2">• Não sabe o que fazem</li>
+                  <li className="flex items-center gap-2">• Resultado duvidoso</li>
+                  <li className="flex items-center gap-2">• Relatório confuso</li>
+                </ul>
+              </div>
+              {/* Path 3 */}
+              <div className="p-8 bg-[#13ec37]/10 border-2 border-[#13ec37]/50">
+                <h3 className="text-[#13ec37] font-black mb-6 flex items-center gap-2">
+                  <span className="material-symbols-outlined">check_circle</span> FAZER VOCÊ MESMO
+                </h3>
+                <ul className="space-y-4 text-sm text-white">
+                  <li className="flex items-center gap-2 font-bold">• Investe R$ 6/dia</li>
+                  <li className="flex items-center gap-2 font-bold">• Cancela quando quiser</li>
+                  <li className="flex items-center gap-2 font-bold">• Sabe TUDO que acontece</li>
+                  <li className="flex items-center gap-2 font-bold">• Resultado nas suas mãos</li>
+                  <li className="flex items-center gap-2 font-bold">• WhatsApp lotado</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 5: MECANISMO */}
+        <section className="py-24 px-4 bg-white dark:bg-[#0d0d0d]">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">
+                Como o Cliente Todo Dia™ funciona
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 font-medium">
+                Em 3 passos simples, VOCÊ aprende a criar campanhas que atraem clientes da sua cidade:
+              </p>
+            </div>
+            <div className="space-y-12">
+              {[
+                { step: "PASSO 1", title: "APARECER", icon: "location_on", desc: "Você aprende a criar anúncios simples que fazem sua empresa aparecer para quem mora perto de você. Todo dia. Automaticamente.", highlight: "Você faz SOZINHO. Em 30 minutos. Mesmo que nunca tenha feito um anúncio na vida." },
+                { step: "PASSO 2", title: "ATRAIR", icon: "target", iconName: "ads_click", desc: "Você aprende a segmentar para que seus anúncios apareçam SÓ para quem tem interesse e condição de comprar.", highlight: "Sem desperdiçar dinheiro. Sem jogar pra todo mundo. VOCÊ controla quem vê." },
+                { step: "PASSO 3", title: "CONVERTER", icon: "chat", desc: "Você aprende a criar anúncios que fazem a pessoa te chamar no WhatsApp, ligar ou ir até sua loja.", highlight: "Sem site. Sem formulário complicado. A pessoa vê, clica e te manda mensagem." }
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col md:flex-row gap-8 items-start group">
+                  <div className="w-16 h-16 shrink-0 bg-[#13ec37]/10 text-[#13ec37] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>{item.iconName || item.icon}</span>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-black text-slate-900 dark:text-white mb-3 flex items-center gap-3">
+                      <span className="text-[#13ec37] text-sm tracking-widest">[{item.step}]</span> {item.title}
+                    </h3>
+                    <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">{item.desc}</p>
+                    <div className="p-4 bg-slate-50 dark:bg-white/5 rounded-xl border-l-4 border-[#13ec37]">
+                      <p className="text-sm font-bold text-slate-900 dark:text-white">{item.highlight}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-16 text-center p-10 rounded-3xl bg-slate-900 text-white border border-white/10">
+              <p className="text-2xl font-black italic mb-2">"Você no controle. Sem agência. Sem gestor. Só VOCÊ e seu negócio."</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6: MÓDULOS */}
+        <section className="py-24 px-4 bg-slate-50 dark:bg-[#0a0a0a]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+              O que VOCÊ vai aprender a fazer sozinho:
+            </h2>
+            <div className="grid gap-6">
+              {[
+                { mod: 1, time: "30 min", title: "Fundação Digital", desc: "VOCÊ prepara seu negócio para receber clientes da internet — mesmo sem site.", points: ["Configurar sua página profissional", "Otimizar seu perfil para vendas", "Preparar seu WhatsApp Business"], result: "sua base pronta (VOCÊ fez)" },
+                { mod: 2, time: "45 min", title: "Aparecer", desc: "VOCÊ cria seu primeiro anúncio do ZERO.", points: ["Criar sua conta no Gerenciador de Anúncios", "Configurar público da sua cidade", "Definir orçamento ideal (a partir de R$ 6/dia)", "Publicar seu primeiro anúncio (passo a passo na tela)"], result: "seu anúncio rodando (VOCÊ criou)" },
+                { mod: 3, time: "45 min", title: "Atrair", desc: "VOCÊ aprende a segmentar como profissional.", points: ["Segmentação por localização (raio exato)", "Segmentação por interesse e comportamento", "Como excluir quem não é cliente", "Públicos que mais convertem por nicho"], result: "só gente qualificada vendo (VOCÊ segmentou)" },
+                { mod: 4, time: "45 min", title: "Converter", desc: "VOCÊ cria anúncios que geram mensagem no WhatsApp.", points: ["Textos de anúncio que geram clique", "Como usar botão do WhatsApp no anúncio", "Script de atendimento (o que responder)", "Como criar oferta irresistível"], result: "mensagens chegando (VOCÊ criou o anúncio)" },
+                { mod: 5, time: "30 min", title: "Escalar", desc: "VOCÊ aprende a crescer investindo pouco.", points: ["Quando e como aumentar orçamento", "Como criar novos anúncios (variações)", "Métricas simples para acompanhar", "Erros que desperdiçam dinheiro"], result: "crescimento constante (VOCÊ controla)" }
+              ].map((module, i) => (
+                <div key={i} className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group">
+                  <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                    <span className="text-8xl font-black">0{module.mod}</span>
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-6 md:items-center justify-between mb-6">
+                    <div>
+                      <h3 className="text-xl font-black text-slate-900 dark:text-white mb-1">📦 MÓDULO {module.mod} — {module.title} ({module.time})</h3>
+                      <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">{module.desc}</p>
+                    </div>
+                  </div>
+                  <ul className="grid md:grid-cols-2 gap-3 mb-6">
+                    {module.points.map((p, j) => (
+                      <li key={j} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300 font-medium">
+                        <span className="material-symbols-outlined text-[#13ec37] text-base">check_circle</span> {p}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="inline-flex items-center gap-2 bg-[#13ec37]/10 text-[#13ec37] px-4 py-2 rounded-lg text-xs font-black uppercase tracking-widest">
+                    <span className="material-symbols-outlined text-sm">verified</span> Resultado: {module.result}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-slate-500 dark:text-slate-400 font-bold uppercase tracking-widest text-xs">
+              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#13ec37]">schedule</span> Tempo total: ~3 horas</span>
+              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#13ec37]">calendar_today</span> Em 1 dia já pode estar rodando</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 7: BÔNUS */}
+        <section className="py-24 px-4 bg-slate-900 text-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 tracking-tight">
+              🎁 BÔNUS QUE ACELERAM SEU RESULTADO:
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                { title: "BÔNUS 1: 15 Modelos de Anúncio Prontos", price: "R$ 97", desc: "Textos testados. VOCÊ só troca foto e dados do seu negócio. Nunca mais fica travado sem saber o que escrever.", icon: "description" },
+                { title: "BÔNUS 2: Checklist de Campanha Lucrativa", price: "R$ 47", desc: "VOCÊ segue o passo a passo e não esquece nada. Igual piloto de avião: checa antes de decolar.", icon: "checklist" },
+                { title: "BÔNUS 3: Calculadora de Investimento", price: "R$ 37", desc: "VOCÊ descobre quanto investir por dia pro SEU tipo de negócio. Sem chutar.", icon: "calculate" },
+                { title: "BÔNUS 4: Comunidade WhatsApp Exclusiva", price: "R$ 29/mês", desc: "Grupo de donos de negócio que fazem seus próprios anúncios. Troca de experiência + suporte.", icon: "groups" },
+                { title: "BÔNUS 5: Aula \"Vídeo que Vende\"", price: "R$ 97", desc: "VOCÊ aprende a criar vídeo com celular. Sem aparecer. Sem equipamento caro.", icon: "videocam" }
+              ].map((bonus, i) => (
+                <div key={i} className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm group">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 shrink-0 bg-[#13ec37]/20 text-[#13ec37] rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform">
+                      <span className="material-symbols-outlined">{bonus.icon}</span>
+                    </div>
+                    <div>
+                      <div className="flex justify-between items-start mb-2">
+                        <h4 className="font-bold text-white leading-tight">{bonus.title}</h4>
+                        <span className="text-[10px] font-black text-red-400 line-through shrink-0 ml-2">{bonus.price}</span>
+                      </div>
+                      <p className="text-xs text-slate-400 leading-relaxed">{bonus.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-12 text-center bg-[#13ec37]/10 p-8 rounded-3xl border-2 border-dashed border-[#13ec37]/30">
+              <p className="text-slate-400 text-sm font-bold uppercase tracking-widest mb-2">Valor total dos bônus</p>
+              <div className="flex items-center justify-center gap-4">
+                <span className="text-3xl font-black text-slate-500 line-through">R$ 307</span>
+                <span className="text-5xl font-black text-[#13ec37] drop-shadow-[0_0_15px_rgba(19,236,55,0.4)]">GRÁTIS ✅</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 8: PROVA SOCIAL */}
+        <section className="py-24 px-4 bg-white dark:bg-[#0d0d0d]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+              Donos de negócio que aprenderam a criar suas próprias campanhas:
+            </h2>
+            <div className="space-y-8">
+              {[
+                { case: 1, name: "Maria, Salão de Beleza, Ribeirão Preto/SP", text: "Eu pagava R$ 1.200 de agência e não via resultado. Aprendi a fazer sozinha com o Cliente Todo Dia. Hoje gasto R$ 15/dia e minha agenda tá lotada.", before: "agência R$ 1.200/mês", now: "R$ 15/dia por conta própria" },
+                { case: 2, name: "Carlos, Pizzaria, Campinas/SP", text: "Nunca tinha mexido no Gerenciador de Anúncios. Achava que era impossível. Criei meu primeiro anúncio em 40 minutos seguindo o passo a passo.", before: "zero anúncios", now: "55 pizzas/noite" },
+                { case: 3, name: "Ana, Loja de Roupas, Goiânia/GO", text: "Demiti a agência no segundo mês. Faço tudo sozinha agora. Gasto menos e vendo mais.", before: "R$ 1.500/mês de agência", now: "faz sozinha, +137% faturamento" }
+              ].map((item, i) => (
+                <div key={i} className="bg-slate-50 dark:bg-white/5 p-8 rounded-3xl border border-slate-100 dark:border-white/5 relative">
+                  <span className="material-symbols-outlined absolute top-6 right-8 text-[#13ec37]/20 text-6xl">format_quote</span>
+                  <p className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-6 leading-relaxed relative z-10 italic">"{item.text}"</p>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-slate-200 dark:border-slate-800 pt-6">
+                    <p className="text-sm font-black text-slate-900 dark:text-white">— {item.name}</p>
+                    <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest">
+                      <span className="text-red-500 line-through opacity-60">Antes: {item.before}</span>
+                      <span className="text-[#13ec37] bg-[#13ec37]/10 px-3 py-1 rounded-full">Agora: {item.now}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section 9: ANCORAGEM */}
+        <section className="py-24 px-4 bg-slate-50 dark:bg-[#0a0a0a]" id="offer">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+              Quanto custa NÃO saber criar suas campanhas?
+            </h2>
+            <div className="bg-white dark:bg-slate-900 rounded-[40px] border border-slate-100 dark:border-slate-800 shadow-2xl overflow-hidden">
+              <div className="p-8 md:p-12">
+                <div className="space-y-6 mb-12">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 opacity-60">
+                    <span className="text-slate-600 dark:text-slate-400 font-bold">Agência de marketing:</span>
+                    <span className="text-red-500 font-black">R$ 18.000/ano (refém deles)</span>
+                  </div>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 opacity-60">
+                    <span className="text-slate-600 dark:text-slate-400 font-bold">Gestor de tráfego:</span>
+                    <span className="text-red-500 font-black">R$ 9.600/ano (se ele sair, você para)</span>
+                  </div>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 opacity-60">
+                    <span className="text-slate-600 dark:text-slate-400 font-bold">Curso genérico:</span>
+                    <span className="text-red-500 font-black">R$ 997 (feito pra quem vende online)</span>
+                  </div>
+                </div>
+                <div className="h-px bg-slate-100 dark:bg-slate-800 w-full mb-12"></div>
+                <div className="text-center">
+                  <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-8 uppercase tracking-widest">O Cliente Todo Dia™:</h3>
+                  <div className="mb-10">
+                    <p className="text-6xl md:text-8xl font-black text-[#13ec37] tracking-tighter mb-2">R$ 197</p>
+                    <p className="text-xl font-bold text-slate-500 dark:text-slate-400">(pagamento único) ou 12x de R$ 19,70</p>
+                  </div>
+                  <div className="space-y-4 mb-10 text-slate-700 dark:text-slate-300 font-bold text-lg">
+                    <p>VOCÊ aprende. VOCÊ faz. VOCÊ controla.</p>
+                    <p>Pra sempre. Sem mensalidade. Sem dependência.</p>
+                  </div>
+                  <div className="bg-slate-50 dark:bg-white/5 p-6 rounded-2xl mb-10">
+                    <p className="text-sm font-black text-[#13ec37] uppercase tracking-widest">O conhecimento fica com VOCÊ. Ninguém tira isso.</p>
+                  </div>
+                  <a href="#" className="block w-full bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-xl font-black py-6 rounded-2xl shadow-2xl shadow-[#13ec37]/40 transition-all transform hover:scale-[1.02] active:scale-[0.98]">
+                    QUERO CRIAR MINHAS CAMPANHAS →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 10: GARANTIA */}
+        <section className="py-24 px-4">
+          <div className="max-w-3xl mx-auto bg-white dark:bg-slate-900 p-10 md:p-16 rounded-[40px] border border-slate-100 dark:border-slate-800 shadow-sm text-center">
+            <div className="w-24 h-24 mx-auto bg-slate-100 dark:bg-white/5 rounded-full flex items-center justify-center mb-8">
+              <span className="material-symbols-outlined text-6xl text-[#13ec37]" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tight">
+              🛡️ GARANTIA INCONDICIONAL DE 7 DIAS
+            </h2>
+            <div className="space-y-6 text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+              <p>Acesse tudo. Assista as aulas. Crie seu primeiro anúncio.</p>
+              <p>Se em 7 dias você sentir que não consegue fazer sozinho — mesmo com o passo a passo na tela — devolvemos 100% do seu dinheiro.</p>
+              <p className="font-bold text-slate-900 dark:text-white">Sem perguntas. Sem burocracia. O risco é ZERO.</p>
+              <p className="text-sm italic">"O risco REAL é continuar pagando R$ 1.500/mês de agência que não te ensina nada. Ou pior: continuar invisível."</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 11: FAQ */}
+        <section className="py-24 px-4 bg-white dark:bg-[#0d0d0d]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+              Dúvidas Frequentes
+            </h2>
             <div className="space-y-4">
-              <details className="group bg-[#171717] rounded-lg border border-gray-800 open:border-[#3B82F6]/50 transition-all">
-                <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold select-none text-white">
-                  Preciso de conhecimento prévio em marketing?
-                  <span className="material-icons-round transition group-open:rotate-180 text-gray-500 group-open:text-[#3B82F6]">expand_more</span>
-                </summary>
-                <div className="px-6 pb-6 text-gray-400 text-sm leading-relaxed">
-                  Absolutamente não. O curso é desenhado para iniciantes, mostrando clique a clique, passo a passo, como configurar tudo do zero.
-                </div>
-              </details>
-              <details className="group bg-[#171717] rounded-lg border border-gray-800 open:border-[#3B82F6]/50 transition-all">
-                <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold select-none text-white">
-                  Quanto tempo demora para ter resultados?
-                  <span className="material-icons-round transition group-open:rotate-180 text-gray-500 group-open:text-[#3B82F6]">expand_more</span>
-                </summary>
-                <div className="px-6 pb-6 text-gray-400 text-sm leading-relaxed">
-                  Muitos alunos começam a ver os primeiros contatos chegando nas primeiras 24 a 48 horas após ativarem as campanhas seguindo o método.
-                </div>
-              </details>
-              <details className="group bg-[#171717] rounded-lg border border-gray-800 open:border-[#3B82F6]/50 transition-all">
-                <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold select-none text-white">
-                  Serve para o meu tipo de negócio?
-                  <span className="material-icons-round transition group-open:rotate-180 text-gray-500 group-open:text-[#3B82F6]">expand_more</span>
-                </summary>
-                <div className="px-6 pb-6 text-gray-400 text-sm leading-relaxed">
-                  Se você vende produtos ou serviços localmente e precisa de clientes na sua cidade ou bairro, sim, serve perfeitamente para você.
-                </div>
-              </details>
-              <details className="group bg-[#171717] rounded-lg border border-gray-800 open:border-[#3B82F6]/50 transition-all">
-                <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold select-none text-white">
-                  O acesso ao curso é vitalício?
-                  <span className="material-icons-round transition group-open:rotate-180 text-gray-500 group-open:text-[#3B82F6]">expand_more</span>
-                </summary>
-                <div className="px-6 pb-6 text-gray-400 text-sm leading-relaxed">
-                  Sim! Você paga uma única vez e tem acesso para sempre, incluindo todas as futuras atualizações.
-                </div>
-              </details>
+              {[
+                { q: "Nunca fiz anúncio na vida. Consigo mesmo?", a: "SIM. O Cliente Todo Dia foi feito pra quem NUNCA anunciou. Tudo é mostrado passo a passo, clicando na tela. Se você sabe usar WhatsApp, consegue criar seu anúncio. Em 30-40 minutos seu primeiro anúncio já está rodando." },
+                { q: "Eu já pago agência. Preciso disso?", a: "Se sua agência traz resultado, ótimo. Mas se você paga R$ 1.500/mês e não sabe nem o que estão fazendo... o Cliente Todo Dia te ensina a fazer o MESMO (ou melhor) gastando R$ 6/dia por conta própria. Vários alunos demitiram a agência depois de aprender." },
+                { q: "Quanto preciso investir em anúncios?", a: "A partir de R$ 6/dia (R$ 180/mês). Dez vezes menos que uma agência. E com VOCÊ no controle total." },
+                { q: "Não tenho tempo pra aprender isso.", a: "O conteúdo total tem ~3 horas. Você assiste no seu ritmo. E depois que configura, o anúncio roda SOZINHO 24 horas. Você gasta 15 minutos por semana pra acompanhar." },
+                { q: "E se a Meta mudar alguma coisa?", a: "O Cliente Todo Dia é atualizado sempre que a Meta muda suas ferramentas. Você recebe as atualizações gratuitamente." },
+                { q: "Já impulsionei post e não funcionou.", a: "Normal. Impulsionar é a forma ERRADA. No Cliente Todo Dia você aprende a usar o Gerenciador de Anúncios — que é o jeito CERTO. Custa menos e traz 10x mais resultado. E VOCÊ aprende a fazer." },
+                { q: "Preciso de site?", a: "Não. Seus anúncios podem direcionar direto pro WhatsApp, ligação ou endereço da loja." },
+                { q: "E se não funcionar?", a: "Garantia de 7 dias. Devolvemos 100%. Mas se você seguir o passo a passo, VAI funcionar. Porque VOCÊ vai estar no controle." }
+              ].map((faq, i) => (
+                <details key={i} className="group bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 transition-all duration-300">
+                  <summary className="flex justify-between items-center cursor-pointer p-6 font-bold text-slate-900 dark:text-white list-none">
+                    {faq.q}
+                    <span className="material-symbols-outlined transition-transform group-open:rotate-180 text-[#13ec37]">expand_more</span>
+                  </summary>
+                  <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-medium">
+                    {faq.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section 12: CTA FINAL */}
+        <section className="py-24 px-4 bg-slate-900 text-white text-center relative overflow-hidden">
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-96 bg-[#13ec37]/10 blur-[120px] rounded-full"></div>
+          <div className="max-w-4xl mx-auto relative z-10">
+            <h2 className="text-3xl md:text-5xl font-black mb-16 tracking-tight">Você tem 3 opções agora:</h2>
+            <div className="grid md:grid-cols-3 gap-6 mb-16">
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/10 text-left opacity-60">
+                <h3 className="font-black text-red-400 mb-4 uppercase tracking-widest text-xs">OPÇÃO 1</h3>
+                <p className="font-bold mb-4">Não fazer nada.</p>
+                <ul className="text-xs space-y-2 text-slate-400">
+                  <li>• Continuar invisível</li>
+                  <li>• Perder clientes pro concorrente</li>
+                  <li>• R$ 7.200/mês de prejuízo</li>
+                </ul>
+              </div>
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/10 text-left opacity-60">
+                <h3 className="font-black text-red-400 mb-4 uppercase tracking-widest text-xs">OPÇÃO 2</h3>
+                <p className="font-bold mb-4">Pagar agência.</p>
+                <ul className="text-xs space-y-2 text-slate-400">
+                  <li>• R$ 1.500/mês</li>
+                  <li>• Sem saber o que fazem</li>
+                  <li>• Refém de contrato</li>
+                  <li>• Volta pra estaca zero se parar</li>
+                </ul>
+              </div>
+              <div className="p-8 rounded-3xl bg-[#13ec37]/10 border-2 border-[#13ec37] text-left">
+                <h3 className="font-black text-[#13ec37] mb-4 uppercase tracking-widest text-xs">OPÇÃO 3</h3>
+                <p className="font-bold mb-4">Aprender a fazer VOCÊ MESMO.</p>
+                <ul className="text-xs space-y-2 text-white">
+                  <li className="font-bold">• R$ 197 (uma vez)</li>
+                  <li className="font-bold">• Investir R$ 6/dia em anúncios</li>
+                  <li className="font-bold">• Saber EXATAMENTE o que faz</li>
+                  <li className="font-bold">• Controle total. Pra sempre.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="space-y-8">
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-4xl md:text-6xl font-black text-[#13ec37]">R$ 197</p>
+                <p className="text-xl font-bold text-slate-400">ou 12x de R$ 19,70</p>
+              </div>
+              <a href="#" className="inline-block w-full max-w-md bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-xl font-black py-6 rounded-2xl shadow-2xl shadow-[#13ec37]/40 transition-all transform hover:scale-105 active:scale-95">
+                QUERO APRENDER A CRIAR MINHAS CAMPANHAS →
+              </a>
+              <div className="flex flex-wrap justify-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">verified_user</span> Garantia 7 dias</span>
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">infinity</span> Acesso vitalício</span>
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">lock</span> Pagamento seguro</span>
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">support_agent</span> Suporte incluso</span>
+              </div>
+              <p className="text-xl font-black italic text-slate-300 mt-12">
+                "Chega de depender dos outros. Seu negócio, suas campanhas, seus resultados."
+              </p>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="bg-black py-12 px-4 border-t border-gray-900 text-sm">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-8">
-          <div className="md:w-1/3">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="material-icons-round text-[#3B82F6]">rocket_launch</span>
-              <span className="font-bold tracking-tight text-white"><span className="text-[#3B82F6]">CLIENTE TODO DIA</span></span>
+      <footer className="bg-black py-16 px-4 border-t border-white/5 text-slate-500">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12">
+          <div className="col-span-2">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="material-symbols-outlined text-[#13ec37]" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
+              <span className="font-black tracking-tight text-white">CLIENTE TODO DIA</span>
             </div>
-            <p className="text-gray-500 mb-6 text-xs leading-relaxed">
-              O método prático para empreendedores locais que querem dominar o tráfego pago e vender todos os dias com lucro real.
+            <p className="text-sm leading-relaxed max-w-xs">
+              O método prático para empreendedores locais que querem dominar o tráfego pago e vender todos os dias com lucro real e autonomia total.
             </p>
-            <div className="flex gap-4">
-              <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#3B82F6] hover:text-white transition cursor-pointer">
-                <span className="text-xs">IG</span>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#3B82F6] hover:text-white transition cursor-pointer">
-                <span className="text-xs">FB</span>
-              </div>
-              <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#3B82F6] hover:text-white transition cursor-pointer">
-                <span className="material-icons-round text-sm">email</span>
-              </div>
-            </div>
           </div>
-          <div className="flex gap-16 md:gap-24">
-            <div>
-              <h4 className="text-white font-bold mb-4 text-xs uppercase tracking-wider">Treinamento</h4>
-              <ul className="space-y-2 text-gray-500 text-xs">
-                <li><a className="hover:text-[#3B82F6] transition" href="#metodo">Módulos</a></li>
-                <li><a className="hover:text-[#3B82F6] transition" href="#offer">Bônus</a></li>
-                <li><a className="hover:text-[#3B82F6] transition" href="#offer">Área de Membros</a></li>
-                <li><a className="hover:text-[#3B82F6] transition" href="#faq">Suporte</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-bold mb-4 text-xs uppercase tracking-wider">Legal</h4>
-              <ul className="space-y-2 text-gray-500 text-xs">
-                <li><a className="hover:text-[#3B82F6] transition" href="#">Termos de Uso</a></li>
-                <li><a className="hover:text-[#3B82F6] transition" href="#">Privacidade</a></li>
-                <li><a className="hover:text-[#3B82F6] transition" href="#">Políticas de Cookies</a></li>
-                <li><a className="hover:text-[#3B82F6] transition" href="#">Reembolso</a></li>
-              </ul>
-            </div>
+          <div>
+            <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Treinamento</h4>
+            <ul className="space-y-3 text-xs font-bold">
+              <li><a className="hover:text-[#13ec37] transition" href="#">Módulos</a></li>
+              <li><a className="hover:text-[#13ec37] transition" href="#">Bônus</a></li>
+              <li><a className="hover:text-[#13ec37] transition" href="#">Área de Membros</a></li>
+              <li><a className="hover:text-[#13ec37] transition" href="#">Suporte</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Legal</h4>
+            <ul className="space-y-3 text-xs font-bold">
+              <li><a className="hover:text-[#13ec37] transition" href="#">Termos de Uso</a></li>
+              <li><a className="hover:text-[#13ec37] transition" href="#">Privacidade</a></li>
+              <li><a className="hover:text-[#13ec37] transition" href="#">Políticas de Cookies</a></li>
+              <li><a className="hover:text-[#13ec37] transition" href="#">Reembolso</a></li>
+            </ul>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+        <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest">
           <p>© 2024 Cliente Todo Dia. Todos os direitos reservados.</p>
-          <p className="mt-2 md:mt-0">Desenvolvido com tecnologia de ponta.</p>
+          <p className="mt-4 md:mt-0 opacity-40">Desenvolvido para resultados reais.</p>
         </div>
       </footer>
     </div>

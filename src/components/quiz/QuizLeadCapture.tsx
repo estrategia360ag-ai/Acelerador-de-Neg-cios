@@ -58,10 +58,10 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
 
         {/* Headings */}
         <h2 className="text-slate-900 tracking-tight text-[28px] font-bold leading-tight px-6 text-center pb-2 pt-2">
-          Diagnóstico concluído!
+          ✅ Diagnóstico concluído!
         </h2>
         <p className="text-slate-600 text-base font-normal leading-relaxed pb-6 pt-1 px-6 text-center">
-          Informe seus dados para desbloquear seu <span className="text-[#0fb82a] font-bold">Score de Visibilidade Local</span> e receber o relatório completo.
+          Seu resultado está pronto. Veja seu <span className="text-[#0fb82a] font-bold">Score de Visibilidade</span> e descubra como você pode criar suas próprias campanhas e parar de depender de agência.
         </p>
 
         {/* Form */}

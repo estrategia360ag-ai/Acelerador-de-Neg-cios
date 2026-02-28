@@ -32,10 +32,13 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
                   Resultado em 2 minutos
                 </div>
                 <h1 className="text-slate-900 text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl">
-                  Teste de Visibilidade <span className="text-[#0fb82a]">Local</span>
+                  🔍 Teste de Visibilidade <span className="text-[#0fb82a]">Local™</span>
                 </h1>
-                <p className="text-slate-600 text-lg font-medium leading-relaxed max-w-lg">
-                  Descubra em 2 minutos por que sua empresa não aparece para novos clientes e como corrigir isso hoje.
+                <p className="text-slate-900 text-lg font-bold leading-relaxed max-w-lg mt-2">
+                  Descubra em 2 minutos se sua empresa está INVISÍVEL — e se você está jogando dinheiro fora com agência ou postando sem resultado.
+                </p>
+                <p className="text-slate-600 text-base font-medium leading-relaxed max-w-lg mt-2">
+                  Responda 8 perguntas rápidas e receba um diagnóstico mostrando por que você ainda não consegue atrair clientes por conta própria — e como mudar isso SEM depender de ninguém.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
