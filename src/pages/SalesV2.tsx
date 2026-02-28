@@ -7,7 +7,7 @@ export function SalesV2() {
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="material-icons-round text-[#3B82F6] text-2xl">rocket_launch</span>
-            <span className="font-bold text-lg tracking-tight">SISTEMA <span className="text-[#3B82F6]">CLIENTE TODO DIA</span></span>
+            <span className="font-bold text-lg tracking-tight"><span className="text-[#3B82F6]">CLIENTE TODO DIA</span></span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-500 dark:text-gray-400">
             <a className="hover:text-[#3B82F6] transition-colors" href="#metodo">O Método</a>
@@ -33,7 +33,7 @@ export function SalesV2() {
               <span className="bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">movimento de rua.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Ative o <strong>Sistema Cliente Todo Dia™</strong> e transforme anúncios no Facebook e Instagram em uma máquina previsível de vendas para o seu negócio local.
+              Ative o <strong>Cliente Todo Dia™</strong> e transforme anúncios no Facebook e Instagram em uma máquina previsível de vendas para o seu negócio local.
             </p>
             <div className="flex flex-col gap-4 items-center">
               <a href="#offer" className="w-full sm:w-auto bg-[#3B82F6] hover:bg-blue-600 text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg shadow-blue-500/30 transition-all transform hover:scale-105 flex items-center justify-center gap-2">
@@ -91,7 +91,7 @@ export function SalesV2() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">O Mecanismo dos 3 Pilares</h2>
               <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Não é mágica, é método. O Sistema Cliente Todo Dia™ se baseia em três etapas fundamentais para garantir fluxo constante de vendas.
+                Não é mágica, é método. O Cliente Todo Dia™ se baseia em três etapas fundamentais para garantir fluxo constante de vendas.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 relative">
@@ -347,7 +347,7 @@ export function SalesV2() {
           <div className="md:w-1/3">
             <div className="flex items-center gap-2 mb-4">
               <span className="material-icons-round text-[#3B82F6]">rocket_launch</span>
-              <span className="font-bold tracking-tight text-white">SISTEMA <span className="text-[#3B82F6]">CLIENTE TODO DIA</span></span>
+              <span className="font-bold tracking-tight text-white"><span className="text-[#3B82F6]">CLIENTE TODO DIA</span></span>
             </div>
             <p className="text-gray-500 mb-6 text-xs leading-relaxed">
               O método prático para empreendedores locais que querem dominar o tráfego pago e vender todos os dias com lucro real.
@@ -386,7 +386,7 @@ export function SalesV2() {
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-          <p>© 2024 Sistema Cliente Todo Dia. Todos os direitos reservados.</p>
+          <p>© 2024 Cliente Todo Dia. Todos os direitos reservados.</p>
           <p className="mt-2 md:mt-0">Desenvolvido com tecnologia de ponta.</p>
         </div>
       </footer>

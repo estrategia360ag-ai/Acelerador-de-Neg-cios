@@ -14,7 +14,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
             <div className="flex items-center justify-center p-1.5 rounded-lg bg-[#13ec37]/10 text-[#0fb82a]">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <h2 className="text-sm font-bold leading-tight tracking-tight text-slate-900">Sistema Cliente Todo Dia</h2>
+            <h2 className="text-sm font-bold leading-tight tracking-tight text-slate-900">Cliente Todo Dia</h2>
           </div>
           <a className="text-sm font-semibold text-[#0fb82a] hover:opacity-80 transition-opacity" href="#">Login</a>
         </div>

@@ -8,7 +8,7 @@ export function Sales() {
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Zap className="text-[#13ec37] w-8 h-8" />
-            <span className="font-bold text-lg tracking-tight uppercase">Sistema Cliente Todo Dia</span>
+            <span className="font-bold text-lg tracking-tight uppercase">Cliente Todo Dia</span>
           </div>
           <div className="hidden md:flex gap-6 text-sm font-medium opacity-80">
             <a className="hover:text-[#13ec37] transition-colors" href="#metodo">O Método</a>
@@ -97,7 +97,7 @@ export function Sales() {
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-slate-600 italic mb-6 leading-relaxed">
-                "Antes do Sistema Cliente Todo Dia, eu ficava postando e rezando. Hoje tenho uma máquina que traz leads qualificados todos os dias sem eu precisar aparecer."
+                "Antes do Cliente Todo Dia, eu ficava postando e rezando. Hoje tenho uma máquina que traz leads qualificados todos os dias sem eu precisar aparecer."
               </p>
               <div className="flex items-center gap-4">
                 <div className="size-12 rounded-full bg-slate-200 overflow-hidden">
@@ -159,7 +159,7 @@ export function Sales() {
             <Package className="w-10 h-10" />
           </div>
           <p className="text-xs text-slate-500">
-            © 2024 Sistema Cliente Todo Dia. Todos os direitos reservados. <br/>
+            © 2024 Cliente Todo Dia. Todos os direitos reservados. <br/>
             Este site não faz parte do Facebook Inc. ou Google LLC.
           </p>
         </div>
