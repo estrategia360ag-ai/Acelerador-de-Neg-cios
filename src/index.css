@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #246CFF;
+  --color-brand-secondary: #0743BD;
+  --color-brand-accent: #FFD700;
+  --color-brand-black: #000000;
+  --color-brand-zinc-900: #18181b;
+  --color-brand-zinc-800: #27272a;
+  --color-brand-zinc-700: #3f3f46;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-white font-sans;
+  }
+}
+
+@layer components {
+  .instagram-gradient {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
