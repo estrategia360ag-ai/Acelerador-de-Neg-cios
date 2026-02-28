@@ -37,16 +37,16 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
   const isImageGrid = question.options.some(opt => opt.image);
 
   return (
-    <div className="flex-1 flex flex-col w-full max-w-md mx-auto bg-[#f6f8f6] min-h-screen relative shadow-xl overflow-hidden">
+    <div className="flex-1 flex flex-col w-full max-w-md mx-auto bg-[#0a0a0a] min-h-screen relative shadow-xl overflow-hidden">
       {/* Top App Bar */}
-      <header className="flex items-center justify-between p-4 pb-2 bg-[#f6f8f6] sticky top-0 z-10">
+      <header className="flex items-center justify-between p-4 pb-2 bg-[#0a0a0a] sticky top-0 z-10">
         <button 
           onClick={onBack}
-          className="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 transition-colors text-slate-900"
+          className="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-800 transition-colors text-white"
         >
           <ArrowLeft className="w-6 h-6" />
         </button>
-        <h2 className="text-slate-900 text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">
+        <h2 className="text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">
           Ferramenta Diagnóstica
         </h2>
       </header>
@@ -56,12 +56,12 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
         {/* Progress Section */}
         <div className="flex flex-col gap-3 py-4">
           <div className="flex gap-6 justify-between items-end">
-            <p className="text-slate-600 text-sm font-medium leading-normal uppercase tracking-wider">
+            <p className="text-slate-400 text-sm font-medium leading-normal uppercase tracking-wider">
               Questão {currentStep} de {totalSteps}
             </p>
             <span className="text-[#13ec37] font-bold text-sm">{Math.round(progress)}%</span>
           </div>
-          <div className="h-2 w-full rounded-full bg-slate-200 overflow-hidden">
+          <div className="h-2 w-full rounded-full bg-slate-800 overflow-hidden">
             <div 
               className="h-full rounded-full bg-[#13ec37] transition-all duration-500 ease-out shadow-[0_0_10px_rgba(19,236,55,0.4)]" 
               style={{ width: `${progress}%` }}
@@ -71,11 +71,11 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
 
         {/* Question Header */}
         <div className="py-4">
-          <h1 className="text-slate-900 text-[28px] font-extrabold leading-tight mb-3">
+          <h1 className="text-white text-[28px] font-extrabold leading-tight mb-3">
             {question.title}
           </h1>
           {question.description && (
-            <p className="text-slate-500 text-base font-normal leading-relaxed">
+            <p className="text-slate-400 text-base font-normal leading-relaxed">
               {question.description}
             </p>
           )}
@@ -116,7 +116,7 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
               <label 
                 key={idx}
                 className={cn(
-                  "group relative flex items-center gap-4 p-5 rounded-xl border-2 bg-white shadow-sm hover:border-[#13ec37]/50 hover:shadow-md cursor-pointer transition-all duration-200",
+                  "group relative flex items-center gap-4 p-5 rounded-xl border-2 bg-zinc-900 shadow-sm hover:border-[#13ec37]/50 hover:shadow-md cursor-pointer transition-all duration-200",
                   selectedOption === option ? "border-[#13ec37] bg-[#13ec37]/5 shadow-lg" : "border-transparent"
                 )}
               >
@@ -124,14 +124,14 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
                   <input 
                     type="radio" 
                     name="question_option" 
-                    className="peer h-6 w-6 appearance-none rounded-full border-2 border-gray-300 checked:border-[#13ec37] focus:ring-0 focus:ring-offset-0 transition-colors"
+                    className="peer h-6 w-6 appearance-none rounded-full border-2 border-slate-700 checked:border-[#13ec37] focus:ring-0 focus:ring-offset-0 transition-colors"
                     checked={selectedOption === option}
                     onChange={() => setSelectedOption(option)}
                   />
                   <div className="absolute inset-0 m-auto h-3 w-3 rounded-full bg-[#13ec37] scale-0 peer-checked:scale-100 transition-transform"></div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-bold text-slate-900 text-lg group-hover:text-[#0fb82a] transition-colors">
+                  <span className="font-bold text-white text-lg group-hover:text-[#0fb82a] transition-colors">
                     {option.label}
                   </span>
                 </div>
@@ -142,7 +142,7 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
       </main>
 
       {/* Bottom Action Bar (Sticky) */}
-      <div className="sticky bottom-0 left-0 right-0 p-4 bg-[#f6f8f6]/90 backdrop-blur-md border-t border-slate-200 z-50 w-full max-w-md mx-auto">
+      <div className="sticky bottom-0 left-0 right-0 p-4 bg-[#0a0a0a]/90 backdrop-blur-md border-t border-slate-800 z-50 w-full max-w-md mx-auto">
         <button 
           onClick={handleNext}
           disabled={!selectedOption}

@@ -2,9 +2,9 @@ import { Zap, Play, Volume2, ShieldCheck, Award, CalendarCheck, Star, CreditCard
 
 export function Sales() {
   return (
-    <div className="min-h-screen bg-[#f6f8f6] text-slate-900 font-sans">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans">
       {/* Top Navigation Bar */}
-      <nav className="sticky top-0 z-50 bg-[#f6f8f6]/80 backdrop-blur-md border-b border-[#13ec37]/10">
+      <nav className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#13ec37]/10">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Zap className="text-[#13ec37] w-8 h-8" />
@@ -27,7 +27,7 @@ export function Sales() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
           Pare de Depender da <span className="text-[#13ec37] italic">Sorte</span> Para Vender
         </h1>
-        <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
           Implemente um sistema previsível de aquisição de clientes e escale seu faturamento com estratégia, mesmo que você esteja começando do zero.
         </p>
 
@@ -65,12 +65,12 @@ export function Sales() {
 
         {/* CTA Section */}
         <div className="mt-12 flex flex-col items-center gap-6">
-          <div className="w-full max-w-2xl bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-[#13ec37]/20 relative overflow-hidden">
+          <div className="w-full max-w-2xl bg-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl border border-[#13ec37]/20 relative overflow-hidden">
             <div className="absolute top-0 right-0 p-4 opacity-5">
               <Package className="w-32 h-32 text-[#13ec37]" />
             </div>
             
-            <h3 className="text-2xl font-black mb-8 flex items-center gap-3">
+            <h3 className="text-2xl font-black mb-8 flex items-center gap-3 text-white">
               <Package className="text-[#13ec37] w-8 h-8" />
               TUDO QUE ESTÁ INCLUÍDO:
             </h3>
@@ -85,18 +85,18 @@ export function Sales() {
                 "Acesso vitalício",
                 "Atualizações gratuitas"
               ].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                <li key={i} className="flex items-center gap-3 text-slate-300 font-medium">
                   <ShieldCheck className="text-[#13ec37] w-5 h-5 shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
 
-            <div className="border-t border-slate-100 pt-8 text-center">
-              <p className="text-slate-400 line-through text-lg mb-2">De R$ 497,00 por apenas</p>
+            <div className="border-t border-slate-800 pt-8 text-center">
+              <p className="text-slate-500 line-through text-lg mb-2">De R$ 497,00 por apenas</p>
               <div className="flex justify-center items-baseline gap-2 mb-8">
-                <span className="text-4xl md:text-6xl font-black text-slate-900">R$ 197</span>
-                <span className="text-slate-500 font-bold">ou 12x R$ 19,70</span>
+                <span className="text-4xl md:text-6xl font-black text-white">R$ 197</span>
+                <span className="text-slate-400 font-bold">ou 12x R$ 19,70</span>
               </div>
               
               <a className="w-full bg-[#13ec37] hover:bg-[#13ec37]/90 text-[#102213] py-6 rounded-full text-xl md:text-2xl font-black tracking-tight shadow-[0_20px_40px_rgba(19,236,55,0.3)] hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" href="#">
@@ -122,58 +122,58 @@ export function Sales() {
       {/* Social Proof Section */}
       <section className="bg-[#13ec37]/5 py-20 border-y border-[#13ec37]/10">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">Quem aplica, colhe resultados reais</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">Quem aplica, colhe resultados reais</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-white p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
+            <div className="bg-slate-900 p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
               <div className="flex gap-1 text-[#13ec37] mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-600 italic mb-6 leading-relaxed">
+              <p className="text-slate-400 italic mb-6 leading-relaxed">
                 "Antes do Cliente Todo Dia, eu ficava postando e rezando. Hoje tenho uma máquina que traz leads qualificados todos os dias sem eu precisar aparecer."
               </p>
               <div className="flex items-center gap-4">
-                <div className="size-12 rounded-full bg-slate-200 overflow-hidden">
+                <div className="size-12 rounded-full bg-slate-800 overflow-hidden">
                   <img alt="Foto de um cliente satisfeito" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALESOUVWzK4sOfk8g7eonISjss8FInpZPt2Hnr5DBdiugVCwljusYK0otQKK1UT6DcHw_9Ee23eee1o7NPMqK5GQRM65-M8sJh9Htlgf2yhGAhKFjqAjJIxjaBn8qxgzNE9VM6q8PPODzqX93M_vWCwA4ARkzxnR_P6i1SI2XufbIKBq4R0rxcMMtkCKiPZp3dLfAqTGp0U1pQZN-uIo4o26SqAHrxtQmjMU_BOTJJRi2gFrelXwCGJmVmuteFdxFYON3CEnvhT9ZW" />
                 </div>
                 <div>
-                  <p className="font-bold text-sm">Ricardo Mendes</p>
+                  <p className="font-bold text-sm text-white">Ricardo Mendes</p>
                   <p className="text-xs text-[#13ec37] font-medium">Estrategista Digital</p>
                 </div>
               </div>
             </div>
             {/* Testimonial 2 */}
-            <div className="bg-white p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
+            <div className="bg-slate-900 p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
               <div className="flex gap-1 text-[#13ec37] mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-600 italic mb-6 leading-relaxed">
+              <p className="text-slate-400 italic mb-6 leading-relaxed">
                 "O melhor investimento que fiz este ano. Saí de R$ 2k para R$ 15k por mês em apenas 45 dias aplicando o módulo de tráfego pago deles."
               </p>
               <div className="flex items-center gap-4">
-                <div className="size-12 rounded-full bg-slate-200 overflow-hidden">
+                <div className="size-12 rounded-full bg-slate-800 overflow-hidden">
                   <img alt="Foto de uma cliente satisfeita" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeJ6kZGPs--SQ9IO4rTZYW1BbY-SVfiNEm9JLHjS67YZpQmKLfPDpizr673-FhFZqql_V2Qd5n3Unc3cf9Ppt2SIq_ATqC3EF1Nh9KVg6RF-3k4z3JfwpA-2JDn7EtKkjLKiESWOi22aGGtoaVkEWAXDYG8uG1LtYQOLvADMriYWjYNibNXRk96Ojuj6Qud5pI2JhdyjPbLdsqRa1QicTkqGf-qCLzgVS5tB1qWceGQeseDjMvwDatXpqWe7tLzOkEJlIn-IKaYE_x" />
                 </div>
                 <div>
-                  <p className="font-bold text-sm">Mariana Silva</p>
+                  <p className="font-bold text-sm text-white">Mariana Silva</p>
                   <p className="text-xs text-[#13ec37] font-medium">Mentora de Negócios</p>
                 </div>
               </div>
             </div>
             {/* Testimonial 3 */}
-            <div className="bg-white p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
+            <div className="bg-slate-900 p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
               <div className="flex gap-1 text-[#13ec37] mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-600 italic mb-6 leading-relaxed">
+              <p className="text-slate-400 italic mb-6 leading-relaxed">
                 "O suporte é fenomenal e as planilhas de gestão mudaram meu jogo. Finalmente entendi onde eu estava jogando dinheiro fora no meu marketing."
               </p>
               <div className="flex items-center gap-4">
-                <div className="size-12 rounded-full bg-slate-200 overflow-hidden">
+                <div className="size-12 rounded-full bg-slate-800 overflow-hidden">
                   <img alt="Foto de um cliente satisfeito" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMWpZVBOv8HMHU8w83NQmAsYm4ddrWmTs4MSeRkP0lboAUq9nmAXmrAeIf6EHI-GTNa_fZnCVsW4tzOrXqbOxX0-6GivSb7GMCKwswIf91fePuur0FI6RIbLl6mSrzH7PoIDeZeA6cJZcDiWmrcYBL965cTOQxMvroTDqFz83JNWssbEUn4cTDSrwH6uCP3B84TSQQR_jkpLbDWkoDpKMks1BjlH5XZW4AwyVx3h2YU5JZyzt4UuWD_7UxrUbpydXktb6v1Coe5V-W" />
                 </div>
                 <div>
-                  <p className="font-bold text-sm">Pedro Albuquerque</p>
+                  <p className="font-bold text-sm text-white">Pedro Albuquerque</p>
                   <p className="text-xs text-[#13ec37] font-medium">Dono de Agência</p>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export function Sales() {
 
       {/* FAQ Section */}
       <section id="faq" className="py-24 px-4 max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-black text-center mb-16 tracking-tight">Dúvidas Frequentes</h2>
+        <h2 className="text-3xl md:text-4xl font-black text-center mb-16 tracking-tight text-white">Dúvidas Frequentes</h2>
         <div className="space-y-4">
           {[
             {
@@ -212,12 +212,12 @@ export function Sales() {
               a: "Você tem 7 dias de garantia. Se não gostar, devolvemos 100%."
             }
           ].map((item, i) => (
-            <details key={i} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden transition-all duration-300 open:shadow-lg open:border-[#13ec37]/30">
-              <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-800 list-none">
+            <details key={i} className="group bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden transition-all duration-300 open:shadow-lg open:border-[#13ec37]/30">
+              <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-white list-none">
                 {item.q}
                 <Zap className="w-5 h-5 text-[#13ec37] transition-transform duration-300 group-open:rotate-180" />
               </summary>
-              <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+              <div className="px-6 pb-6 text-slate-400 leading-relaxed">
                 {item.a}
               </div>
             </details>

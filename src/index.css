@@ -31,7 +31,7 @@
 
 @layer base {
   body {
-    @apply bg-[#0a0a0a] text-white font-sans;
+    @apply bg-[#0a0a0a] text-white font-sans antialiased;
   }
 }
 

@@ -2,9 +2,9 @@ import React from 'react';
 
 export function SalesV2() {
   return (
-    <div className="bg-[#f6f8f6] dark:bg-[#0A0A0A] text-slate-900 dark:text-slate-100 min-h-screen font-['Manrope'] antialiased overflow-x-hidden">
+    <div className="bg-[#0A0A0A] text-slate-100 min-h-screen font-['Manrope'] antialiased overflow-x-hidden">
       {/* Header */}
-      <header className="fixed w-full z-50 top-0 left-0 bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+      <header className="fixed w-full z-50 top-0 left-0 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[#13ec37] text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
@@ -24,10 +24,10 @@ export function SalesV2() {
             <p className="text-[#13ec37] dark:text-[#13ec37] text-xs md:text-sm font-bold uppercase tracking-widest mb-6 px-4">
               Para donos de negócio local que estão CANSADOS de depender de agência, gestor de tráfego ou da sorte para vender
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-slate-900 dark:text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
               Aprenda a Criar Suas Próprias Campanhas e Receba <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#13ec37] to-emerald-600">Clientes Todo Dia</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
               O Cliente Todo Dia™ é o sistema de 3 passos que ensina donos de negócio local a criarem seus próprios anúncios no Instagram e Facebook — gastando a partir de R$ 6/dia — e lotarem a agenda sem depender de ninguém.
             </p>
             <div className="flex flex-col gap-4 items-center">
@@ -37,7 +37,7 @@ export function SalesV2() {
                 </span>
                 <span className="text-sm font-bold opacity-80 uppercase tracking-wider">R$ 197 | 12x de R$ 19,70</span>
               </a>
-              <div className="flex items-center gap-6 text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-widest mt-4">
+              <div className="flex items-center gap-6 text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-4">
                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[#13ec37] text-sm">verified_user</span> Acesso Vitalício</span>
                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[#13ec37] text-sm">lock</span> Pagamento Seguro</span>
               </div>
@@ -46,9 +46,9 @@ export function SalesV2() {
         </section>
 
         {/* Section 2: DORES */}
-        <section className="py-20 px-4 bg-white dark:bg-[#0d0d0d] border-y border-gray-100 dark:border-gray-800">
+        <section className="py-20 px-4 bg-[#0d0d0d] border-y border-gray-800">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 text-white tracking-tight">
               Isso soa familiar?
             </h2>
             <div className="space-y-4 mb-12">
@@ -61,14 +61,14 @@ export function SalesV2() {
                 "Tem medo de mexer no Gerenciador de Anúncios?",
                 "Sente que poderia atrair mais clientes mas não sabe por onde começar?"
               ].map((pain, i) => (
-                <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-100 dark:border-white/5">
+                <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/5">
                   <span className="material-symbols-outlined text-red-500 font-bold">close</span>
-                  <p className="text-slate-700 dark:text-slate-300 font-semibold">{pain}</p>
+                  <p className="text-slate-300 font-semibold">{pain}</p>
                 </div>
               ))}
             </div>
             <div className="text-center p-8 rounded-3xl bg-[#13ec37]/5 border-2 border-dashed border-[#13ec37]/30">
-              <p className="text-xl md:text-2xl font-black text-slate-900 dark:text-white italic leading-tight">
+              <p className="text-xl md:text-2xl font-black text-white italic leading-tight">
                 "O problema não é seu produto. É que ninguém te ensinou a fazer ele <span className="text-[#13ec37]">APARECER</span>."
               </p>
             </div>
@@ -79,21 +79,21 @@ export function SalesV2() {
         <section className="py-24 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white tracking-tight">
                 ⚠️ Quanto custa DEPENDER dos outros?
               </h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {/* Scenario 1 */}
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+              <div className="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-sm">
                 <h3 className="text-xs font-black text-red-500 uppercase tracking-widest mb-4">CENÁRIO 1</h3>
-                <p className="text-lg font-bold mb-6 text-slate-900 dark:text-white">Você paga agência</p>
+                <p className="text-lg font-bold mb-6 text-white">Você paga agência</p>
                 <div className="space-y-3 text-sm mb-8">
-                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <div className="flex justify-between border-b border-slate-800 pb-2">
                     <span className="text-slate-500">Mensalidade</span>
                     <span className="font-bold">R$ 1.500/mês</span>
                   </div>
-                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <div className="flex justify-between border-b border-slate-800 pb-2">
                     <span className="text-slate-500">Contrato mín.</span>
                     <span className="font-bold">6 meses</span>
                   </div>
@@ -102,22 +102,22 @@ export function SalesV2() {
                     <span className="font-black text-red-500">R$ 9.000</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-xs font-bold text-red-500 bg-red-50 dark:bg-red-900/20 p-3 rounded-xl">
+                <div className="flex items-center gap-2 text-xs font-bold text-red-500 bg-red-900/20 p-3 rounded-xl">
                   <span className="material-symbols-outlined text-sm">cancel</span>
                   Resultado garantido? NÃO
                 </div>
               </div>
 
               {/* Scenario 2 */}
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">
+              <div className="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-sm">
                 <h3 className="text-xs font-black text-red-500 uppercase tracking-widest mb-4">CENÁRIO 2</h3>
-                <p className="text-lg font-bold mb-6 text-slate-900 dark:text-white">Você não anuncia</p>
+                <p className="text-lg font-bold mb-6 text-white">Você não anuncia</p>
                 <div className="space-y-3 text-sm mb-8">
-                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <div className="flex justify-between border-b border-slate-800 pb-2">
                     <span className="text-slate-500">Clientes perdidos</span>
                     <span className="font-bold">3/dia</span>
                   </div>
-                  <div className="flex justify-between border-b border-slate-100 dark:border-slate-800 pb-2">
+                  <div className="flex justify-between border-b border-slate-800 pb-2">
                     <span className="text-slate-500">Ticket médio</span>
                     <span className="font-bold">R$ 80</span>
                   </div>
@@ -126,14 +126,14 @@ export function SalesV2() {
                     <span className="font-black text-red-500">R$ 86.400</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 bg-slate-50 dark:bg-white/5 p-3 rounded-xl">
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-500 bg-white/5 p-3 rounded-xl">
                   <span className="material-symbols-outlined text-sm">trending_down</span>
                   Invisível para o mercado
                 </div>
               </div>
 
               {/* Scenario 3 */}
-              <div className="bg-[#13ec37] p-8 rounded-3xl border-4 border-white dark:border-slate-800 shadow-2xl shadow-[#13ec37]/30 transform md:scale-105">
+              <div className="bg-[#13ec37] p-8 rounded-3xl border-4 border-slate-800 shadow-2xl shadow-[#13ec37]/30 transform md:scale-105">
                 <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest mb-4">CENÁRIO 3</h3>
                 <p className="text-lg font-bold mb-6 text-slate-900">VOCÊ aprende e faz</p>
                 <div className="space-y-3 text-sm mb-8 text-slate-900/80">
@@ -156,7 +156,7 @@ export function SalesV2() {
                 </div>
               </div>
             </div>
-            <p className="text-center mt-12 text-xl font-bold text-slate-900 dark:text-white">Qual cenário faz mais sentido?</p>
+            <p className="text-center mt-12 text-xl font-bold text-white">Qual cenário faz mais sentido?</p>
           </div>
         </section>
 
@@ -212,13 +212,13 @@ export function SalesV2() {
         </section>
 
         {/* Section 5: MECANISMO */}
-        <section className="py-24 px-4 bg-white dark:bg-[#0d0d0d]">
+        <section className="py-24 px-4 bg-[#0d0d0d]">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white tracking-tight">
                 Como o Cliente Todo Dia™ funciona
               </h2>
-              <p className="text-slate-600 dark:text-slate-400 font-medium">
+              <p className="text-slate-400 font-medium">
                 Em 3 passos simples, VOCÊ aprende a criar campanhas que atraem clientes da sua cidade:
               </p>
             </div>
@@ -233,12 +233,12 @@ export function SalesV2() {
                     <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>{item.iconName || item.icon}</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-black text-slate-900 dark:text-white mb-3 flex items-center gap-3">
+                    <h3 className="text-xl font-black text-white mb-3 flex items-center gap-3">
                       <span className="text-[#13ec37] text-sm tracking-widest">[{item.step}]</span> {item.title}
                     </h3>
-                    <p className="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">{item.desc}</p>
-                    <div className="p-4 bg-slate-50 dark:bg-white/5 rounded-xl border-l-4 border-[#13ec37]">
-                      <p className="text-sm font-bold text-slate-900 dark:text-white">{item.highlight}</p>
+                    <p className="text-slate-400 mb-4 leading-relaxed">{item.desc}</p>
+                    <div className="p-4 bg-white/5 rounded-xl border-l-4 border-[#13ec37]">
+                      <p className="text-sm font-bold text-white">{item.highlight}</p>
                     </div>
                   </div>
                 </div>
@@ -251,9 +251,9 @@ export function SalesV2() {
         </section>
 
         {/* Section 6: MÓDULOS */}
-        <section className="py-24 px-4 bg-slate-50 dark:bg-[#0a0a0a]">
+        <section className="py-24 px-4 bg-[#0a0a0a]">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-white tracking-tight">
               O que VOCÊ vai aprender a fazer sozinho:
             </h2>
             <div className="grid gap-6">
@@ -264,19 +264,19 @@ export function SalesV2() {
                 { mod: 4, time: "45 min", title: "Converter", desc: "VOCÊ cria anúncios que geram mensagem no WhatsApp.", points: ["Textos de anúncio que geram clique", "Como usar botão do WhatsApp no anúncio", "Script de atendimento (o que responder)", "Como criar oferta irresistível"], result: "mensagens chegando (VOCÊ criou o anúncio)" },
                 { mod: 5, time: "30 min", title: "Escalar", desc: "VOCÊ aprende a crescer investindo pouco.", points: ["Quando e como aumentar orçamento", "Como criar novos anúncios (variações)", "Métricas simples para acompanhar", "Erros que desperdiçam dinheiro"], result: "crescimento constante (VOCÊ controla)" }
               ].map((module, i) => (
-                <div key={i} className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm relative overflow-hidden group">
+                <div key={i} className="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-sm relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                     <span className="text-8xl font-black">0{module.mod}</span>
                   </div>
                   <div className="flex flex-col md:flex-row gap-6 md:items-center justify-between mb-6">
                     <div>
-                      <h3 className="text-xl font-black text-slate-900 dark:text-white mb-1">📦 MÓDULO {module.mod} — {module.title} ({module.time})</h3>
-                      <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">{module.desc}</p>
+                      <h3 className="text-xl font-black text-white mb-1">📦 MÓDULO {module.mod} — {module.title} ({module.time})</h3>
+                      <p className="text-slate-400 text-sm font-medium">{module.desc}</p>
                     </div>
                   </div>
                   <ul className="grid md:grid-cols-2 gap-3 mb-6">
                     {module.points.map((p, j) => (
-                      <li key={j} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300 font-medium">
+                      <li key={j} className="flex items-center gap-2 text-sm text-slate-300 font-medium">
                         <span className="material-symbols-outlined text-[#13ec37] text-base">check_circle</span> {p}
                       </li>
                     ))}
@@ -287,7 +287,7 @@ export function SalesV2() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-slate-500 dark:text-slate-400 font-bold uppercase tracking-widest text-xs">
+            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-slate-400 font-bold uppercase tracking-widest text-xs">
               <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#13ec37]">schedule</span> Tempo total: ~3 horas</span>
               <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#13ec37]">calendar_today</span> Em 1 dia já pode estar rodando</span>
             </div>
@@ -335,9 +335,9 @@ export function SalesV2() {
         </section>
 
         {/* Section 8: PROVA SOCIAL */}
-        <section className="py-24 px-4 bg-white dark:bg-[#0d0d0d]">
+        <section className="py-24 px-4 bg-[#0d0d0d]">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-white tracking-tight">
               Donos de negócio que aprenderam a criar suas próprias campanhas:
             </h2>
             <div className="space-y-8">
@@ -346,11 +346,11 @@ export function SalesV2() {
                 { case: 2, name: "Carlos, Pizzaria, Campinas/SP", text: "Nunca tinha mexido no Gerenciador de Anúncios. Achava que era impossível. Criei meu primeiro anúncio em 40 minutos seguindo o passo a passo.", before: "zero anúncios", now: "55 pizzas/noite" },
                 { case: 3, name: "Ana, Loja de Roupas, Goiânia/GO", text: "Demiti a agência no segundo mês. Faço tudo sozinha agora. Gasto menos e vendo mais.", before: "R$ 1.500/mês de agência", now: "faz sozinha, +137% faturamento" }
               ].map((item, i) => (
-                <div key={i} className="bg-slate-50 dark:bg-white/5 p-8 rounded-3xl border border-slate-100 dark:border-white/5 relative">
+                <div key={i} className="bg-white/5 p-8 rounded-3xl border border-white/5 relative">
                   <span className="material-symbols-outlined absolute top-6 right-8 text-[#13ec37]/20 text-6xl">format_quote</span>
-                  <p className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-6 leading-relaxed relative z-10 italic">"{item.text}"</p>
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-slate-200 dark:border-slate-800 pt-6">
-                    <p className="text-sm font-black text-slate-900 dark:text-white">— {item.name}</p>
+                  <p className="text-lg font-bold text-slate-200 mb-6 leading-relaxed relative z-10 italic">"{item.text}"</p>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-slate-800 pt-6">
+                    <p className="text-sm font-black text-white">— {item.name}</p>
                     <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest">
                       <span className="text-red-500 line-through opacity-60">Antes: {item.before}</span>
                       <span className="text-[#13ec37] bg-[#13ec37]/10 px-3 py-1 rounded-full">Agora: {item.now}</span>
@@ -363,39 +363,39 @@ export function SalesV2() {
         </section>
 
         {/* Section 9: ANCORAGEM */}
-        <section className="py-24 px-4 bg-slate-50 dark:bg-[#0a0a0a]" id="offer">
+        <section className="py-24 px-4 bg-[#0a0a0a]" id="offer">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-white tracking-tight">
               Quanto custa NÃO saber criar suas campanhas?
             </h2>
-            <div className="bg-white dark:bg-slate-900 rounded-[40px] border border-slate-100 dark:border-slate-800 shadow-2xl overflow-hidden">
+            <div className="bg-slate-900 rounded-[40px] border border-slate-800 shadow-2xl overflow-hidden">
               <div className="p-8 md:p-12">
                 <div className="space-y-6 mb-12">
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 opacity-60">
-                    <span className="text-slate-600 dark:text-slate-400 font-bold">Agência de marketing:</span>
+                    <span className="text-slate-400 font-bold">Agência de marketing:</span>
                     <span className="text-red-500 font-black">R$ 18.000/ano (refém deles)</span>
                   </div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 opacity-60">
-                    <span className="text-slate-600 dark:text-slate-400 font-bold">Gestor de tráfego:</span>
+                    <span className="text-slate-400 font-bold">Gestor de tráfego:</span>
                     <span className="text-red-500 font-black">R$ 9.600/ano (se ele sair, você para)</span>
                   </div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 opacity-60">
-                    <span className="text-slate-600 dark:text-slate-400 font-bold">Curso genérico:</span>
+                    <span className="text-slate-400 font-bold">Curso genérico:</span>
                     <span className="text-red-500 font-black">R$ 997 (feito pra quem vende online)</span>
                   </div>
                 </div>
-                <div className="h-px bg-slate-100 dark:bg-slate-800 w-full mb-12"></div>
+                <div className="h-px bg-slate-800 w-full mb-12"></div>
                 <div className="text-center">
-                  <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-8 uppercase tracking-widest">O Cliente Todo Dia™:</h3>
+                  <h3 className="text-2xl font-black text-white mb-8 uppercase tracking-widest">O Cliente Todo Dia™:</h3>
                   <div className="mb-10">
                     <p className="text-6xl md:text-8xl font-black text-[#13ec37] tracking-tighter mb-2">R$ 197</p>
-                    <p className="text-xl font-bold text-slate-500 dark:text-slate-400">(pagamento único) ou 12x de R$ 19,70</p>
+                    <p className="text-xl font-bold text-slate-400">(pagamento único) ou 12x de R$ 19,70</p>
                   </div>
-                  <div className="space-y-4 mb-10 text-slate-700 dark:text-slate-300 font-bold text-lg">
+                  <div className="space-y-4 mb-10 text-slate-300 font-bold text-lg">
                     <p>VOCÊ aprende. VOCÊ faz. VOCÊ controla.</p>
                     <p>Pra sempre. Sem mensalidade. Sem dependência.</p>
                   </div>
-                  <div className="bg-slate-50 dark:bg-white/5 p-6 rounded-2xl mb-10">
+                  <div className="bg-white/5 p-6 rounded-2xl mb-10">
                     <p className="text-sm font-black text-[#13ec37] uppercase tracking-widest">O conhecimento fica com VOCÊ. Ninguém tira isso.</p>
                   </div>
                   <a href="#" className="block w-full bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-xl font-black py-6 rounded-2xl shadow-2xl shadow-[#13ec37]/40 transition-all transform hover:scale-[1.02] active:scale-[0.98]">
@@ -409,26 +409,26 @@ export function SalesV2() {
 
         {/* Section 10: GARANTIA */}
         <section className="py-24 px-4">
-          <div className="max-w-3xl mx-auto bg-white dark:bg-slate-900 p-10 md:p-16 rounded-[40px] border border-slate-100 dark:border-slate-800 shadow-sm text-center">
-            <div className="w-24 h-24 mx-auto bg-slate-100 dark:bg-white/5 rounded-full flex items-center justify-center mb-8">
+          <div className="max-w-3xl mx-auto bg-slate-900 p-10 md:p-16 rounded-[40px] border border-slate-800 shadow-sm text-center">
+            <div className="w-24 h-24 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-8">
               <span className="material-symbols-outlined text-6xl text-[#13ec37]" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tight">
+            <h2 className="text-2xl md:text-3xl font-black text-white mb-6 uppercase tracking-tight">
               🛡️ GARANTIA INCONDICIONAL DE 7 DIAS
             </h2>
-            <div className="space-y-6 text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+            <div className="space-y-6 text-slate-400 font-medium leading-relaxed">
               <p>Acesse tudo. Assista as aulas. Crie seu primeiro anúncio.</p>
               <p>Se em 7 dias você sentir que não consegue fazer sozinho — mesmo com o passo a passo na tela — devolvemos 100% do seu dinheiro.</p>
-              <p className="font-bold text-slate-900 dark:text-white">Sem perguntas. Sem burocracia. O risco é ZERO.</p>
+              <p className="font-bold text-white">Sem perguntas. Sem burocracia. O risco é ZERO.</p>
               <p className="text-sm italic">"O risco REAL é continuar pagando R$ 1.500/mês de agência que não te ensina nada. Ou pior: continuar invisível."</p>
             </div>
           </div>
         </section>
 
         {/* Section 11: FAQ */}
-        <section className="py-24 px-4 bg-white dark:bg-[#0d0d0d]">
+        <section className="py-24 px-4 bg-[#0d0d0d]">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-slate-900 dark:text-white tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 text-white tracking-tight">
               Dúvidas Frequentes
             </h2>
             <div className="space-y-4">
@@ -442,12 +442,12 @@ export function SalesV2() {
                 { q: "Preciso de site?", a: "Não. Seus anúncios podem direcionar direto pro WhatsApp, ligação ou endereço da loja." },
                 { q: "E se não funcionar?", a: "Garantia de 7 dias. Devolvemos 100%. Mas se você seguir o passo a passo, VAI funcionar. Porque VOCÊ vai estar no controle." }
               ].map((faq, i) => (
-                <details key={i} className="group bg-slate-50 dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/5 transition-all duration-300">
-                  <summary className="flex justify-between items-center cursor-pointer p-6 font-bold text-slate-900 dark:text-white list-none">
+                <details key={i} className="group bg-white/5 rounded-2xl border border-white/5 transition-all duration-300">
+                  <summary className="flex justify-between items-center cursor-pointer p-6 font-bold text-white list-none">
                     {faq.q}
                     <span className="material-symbols-outlined transition-transform group-open:rotate-180 text-[#13ec37]">expand_more</span>
                   </summary>
-                  <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed font-medium">
+                  <div className="px-6 pb-6 text-slate-400 text-sm leading-relaxed font-medium">
                     {faq.a}
                   </div>
                 </details>

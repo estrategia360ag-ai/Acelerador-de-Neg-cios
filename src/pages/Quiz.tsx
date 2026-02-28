@@ -70,7 +70,7 @@ export function Quiz() {
   }, 0);
 
   return (
-    <div className="min-h-screen bg-[#f6f8f6] font-sans antialiased">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans antialiased">
       {quizState === 'landing' && (
         <QuizLanding onStart={handleStart} />
       )}
