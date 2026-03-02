@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function SalesV2() {
+export default function SalesV2() {
   return (
     <div className="bg-[#0A0A0A] text-slate-100 min-h-screen font-['Manrope'] antialiased overflow-x-hidden">
       {/* Header */}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Rocket, Menu, X } from 'lucide-react';
 import { Button } from './Button';
 import { cn } from '../src/lib/utils';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,7 +22,7 @@ export const Header = () => {
       isScrolled ? 'py-4 bg-black/80 backdrop-blur-md border-b border-white/5' : 'py-6 bg-transparent'
     )}>
       <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <div className="relative">
             <svg width="0" height="0" className="absolute">
               <defs>

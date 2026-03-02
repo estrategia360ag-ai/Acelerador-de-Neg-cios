@@ -7,7 +7,7 @@ import { Pricing } from '../../components/Pricing';
 import { FAQ } from '../../components/FAQ';
 import { Footer } from '../../components/Footer';
 
-export function Home() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-brand-primary selection:text-white font-sans antialiased">
       <Header />

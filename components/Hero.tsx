@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Rocket, ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export const Hero = () => {
   return (

@@ -1,6 +1,6 @@
 import { Zap, Play, Volume2, ShieldCheck, Award, CalendarCheck, Star, CreditCard, Lock, Shield, Package } from 'lucide-react';
 
-export function Sales() {
+export default function Sales() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 font-sans">
       {/* Top Navigation Bar */}

@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { QuizLanding } from '../components/quiz/QuizLanding';
 import { QuizQuestion } from '../components/quiz/QuizQuestion';
 import { QuizLeadCapture } from '../components/quiz/QuizLeadCapture';
@@ -8,8 +10,8 @@ import { quizQuestions, QuestionOption } from '../data/quiz';
 
 type QuizState = 'landing' | 'questions' | 'lead_capture' | 'result';
 
-export function Quiz() {
-  const navigate = useNavigate();
+export default function Quiz() {
+  const router = useRouter();
   const [quizState, setQuizState] = useState<QuizState>('landing');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, QuestionOption>>({});
@@ -59,7 +61,7 @@ export function Quiz() {
   };
 
   const handleGoToSales = () => {
-    navigate('/vendas');
+    router.push('/vendas');
   };
 
   // Calculate total possible score (assuming max points per question is 4 based on data)
