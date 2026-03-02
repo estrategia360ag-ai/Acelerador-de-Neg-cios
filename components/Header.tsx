@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { Rocket, Menu, X } from 'lucide-react';
 import { Button } from './Button';

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { motion } from 'motion/react';
 import { Check, ShieldCheck, Gift, Users, FileText } from 'lucide-react';

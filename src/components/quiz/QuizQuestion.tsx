@@ -1,3 +1,5 @@
+'use client';
+
 import { ArrowLeft, ArrowRight, Store, UtensilsCrossed, Scissors, Stethoscope, Briefcase, Shapes } from 'lucide-react';
 import { Question, QuestionOption } from '../../data/quiz';
 import { useState } from 'react';
