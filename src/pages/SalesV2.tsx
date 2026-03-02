@@ -27,7 +27,7 @@ export default function SalesV2() {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
               Aprenda a Criar Suas Próprias Campanhas e Receba <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-600">Clientes Todo Dia</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
               O Cliente Todo Dia™ é o sistema de 3 passos que ensina donos de negócio local a criarem seus próprios anúncios no Instagram e Facebook — gastando a partir de R$ 6/dia — e lotarem a agenda sem depender de ninguém.
             </p>
             <div className="flex flex-col gap-4 items-center">
@@ -62,7 +62,7 @@ export default function SalesV2() {
               ].map((pain, i) => (
                 <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/5">
                   <span className="material-symbols-outlined text-red-500 font-bold">close</span>
-                  <p className="text-slate-300 font-semibold">{pain}</p>
+                  <p className="text-slate-200 font-semibold">{pain}</p>
                 </div>
               ))}
             </div>
@@ -172,7 +172,7 @@ export default function SalesV2() {
                 <h3 className="text-red-400 font-black mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined">cancel</span> NÃO ANUNCIAR
                 </h3>
-                <ul className="space-y-4 text-sm text-slate-400">
+                <ul className="space-y-4 text-sm text-slate-300">
                   <li className="flex items-center gap-2">• Zero controle</li>
                   <li className="flex items-center gap-2">• Zero previsibilidade</li>
                   <li className="flex items-center gap-2">• Depende da sorte</li>
@@ -185,7 +185,7 @@ export default function SalesV2() {
                 <h3 className="text-red-400 font-black mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined">cancel</span> PAGAR AGÊNCIA
                 </h3>
-                <ul className="space-y-4 text-sm text-slate-400">
+                <ul className="space-y-4 text-sm text-slate-300">
                   <li className="flex items-center gap-2">• R$ 1.500/mês</li>
                   <li className="flex items-center gap-2">• Contrato de 6 meses</li>
                   <li className="flex items-center gap-2">• Não sabe o que fazem</li>
@@ -217,7 +217,7 @@ export default function SalesV2() {
               <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white tracking-tight">
                 Como o Cliente Todo Dia™ funciona
               </h2>
-              <p className="text-slate-400 font-medium">
+              <p className="text-slate-300 font-medium">
                 Em 3 passos simples, VOCÊ aprende a criar campanhas que atraem clientes da sua cidade:
               </p>
             </div>
@@ -235,7 +235,7 @@ export default function SalesV2() {
                     <h3 className="text-xl font-black text-white mb-3 flex items-center gap-3">
                       <span className="text-indigo-400 text-sm tracking-widest">[{item.step}]</span> {item.title}
                     </h3>
-                    <p className="text-slate-400 mb-4 leading-relaxed">{item.desc}</p>
+                    <p className="text-slate-300 mb-4 leading-relaxed">{item.desc}</p>
                     <div className="p-4 bg-white/5 rounded-xl border-l-4 border-indigo-500">
                       <p className="text-sm font-bold text-white">{item.highlight}</p>
                     </div>
@@ -270,12 +270,12 @@ export default function SalesV2() {
                   <div className="flex flex-col md:flex-row gap-6 md:items-center justify-between mb-6">
                     <div>
                       <h3 className="text-xl font-black text-white mb-1">📦 MÓDULO {module.mod} — {module.title} ({module.time})</h3>
-                      <p className="text-slate-400 text-sm font-medium">{module.desc}</p>
+                      <p className="text-slate-300 text-sm font-medium">{module.desc}</p>
                     </div>
                   </div>
                   <ul className="grid md:grid-cols-2 gap-3 mb-6">
                     {module.points.map((p, j) => (
-                      <li key={j} className="flex items-center gap-2 text-sm text-slate-300 font-medium">
+                      <li key={j} className="flex items-center gap-2 text-sm text-slate-200 font-medium">
                         <span className="material-symbols-outlined text-indigo-500 text-base">check_circle</span> {p}
                       </li>
                     ))}
@@ -286,7 +286,7 @@ export default function SalesV2() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-slate-400 font-bold uppercase tracking-widest text-xs">
+            <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-slate-300 font-bold uppercase tracking-widest text-xs">
               <span className="flex items-center gap-2"><span className="material-symbols-outlined text-indigo-500">schedule</span> Tempo total: ~3 horas</span>
               <span className="flex items-center gap-2"><span className="material-symbols-outlined text-indigo-500">calendar_today</span> Em 1 dia já pode estar rodando</span>
             </div>
@@ -317,7 +317,7 @@ export default function SalesV2() {
                         <h4 className="font-bold text-white leading-tight">{bonus.title}</h4>
                         <span className="text-[10px] font-black text-red-400 line-through shrink-0 ml-2">{bonus.price}</span>
                       </div>
-                      <p className="text-xs text-slate-400 leading-relaxed">{bonus.desc}</p>
+                      <p className="text-xs text-slate-300 leading-relaxed">{bonus.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -415,7 +415,7 @@ export default function SalesV2() {
             <h2 className="text-2xl md:text-3xl font-black text-white mb-6 uppercase tracking-tight">
               🛡️ GARANTIA INCONDICIONAL DE 7 DIAS
             </h2>
-            <div className="space-y-6 text-slate-400 font-medium leading-relaxed">
+            <div className="space-y-6 text-slate-300 font-medium leading-relaxed">
               <p>Acesse tudo. Assista as aulas. Crie seu primeiro anúncio.</p>
               <p>Se em 7 dias você sentir que não consegue fazer sozinho — mesmo com o passo a passo na tela — devolvemos 100% do seu dinheiro.</p>
               <p className="font-bold text-white">Sem perguntas. Sem burocracia. O risco é ZERO.</p>
@@ -446,7 +446,7 @@ export default function SalesV2() {
                     {faq.q}
                     <span className="material-symbols-outlined transition-transform group-open:rotate-180 text-indigo-500">expand_more</span>
                   </summary>
-                  <div className="px-6 pb-6 text-slate-400 text-sm leading-relaxed font-medium">
+                  <div className="px-6 pb-6 text-slate-300 text-sm leading-relaxed font-medium">
                     {faq.a}
                   </div>
                 </details>

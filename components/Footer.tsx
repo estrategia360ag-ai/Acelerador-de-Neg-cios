@@ -11,7 +11,7 @@ export const Footer = () => {
               <Rocket className="stroke-[url(#ig-gradient)]" size={32} />
               <span className="text-2xl font-black text-white uppercase tracking-tighter">Acelerador de <span className="text-brand-primary">Negócios</span></span>
             </div>
-            <p className="text-zinc-400 max-w-sm mb-8">
+            <p className="text-zinc-300 max-w-sm mb-8">
               O método prático para empreendedores que querem dominar o tráfego pago e vender todos os dias com lucro real.
             </p>
             <div className="flex gap-4">
@@ -29,7 +29,7 @@ export const Footer = () => {
 
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-sm">Treinamento</h4>
-            <ul className="space-y-4 text-zinc-400 text-sm">
+            <ul className="space-y-4 text-zinc-300 text-sm">
               <li><a href="#" className="hover:text-brand-primary transition-colors">Módulos</a></li>
               <li><a href="#" className="hover:text-brand-primary transition-colors">Bônus</a></li>
               <li><a href="#" className="hover:text-brand-primary transition-colors">Área de Membros</a></li>
@@ -39,7 +39,7 @@ export const Footer = () => {
 
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-sm">Legal</h4>
-            <ul className="space-y-4 text-zinc-400 text-sm">
+            <ul className="space-y-4 text-zinc-300 text-sm">
               <li><a href="#" className="hover:text-brand-primary transition-colors">Termos de Uso</a></li>
               <li><a href="#" className="hover:text-brand-primary transition-colors">Privacidade</a></li>
               <li><a href="#" className="hover:text-brand-primary transition-colors">Políticas de Cookies</a></li>
@@ -49,7 +49,7 @@ export const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-zinc-500 text-xs">
+          <p className="text-zinc-400 text-xs">
             © 2026 Acelerador de Negócios. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">

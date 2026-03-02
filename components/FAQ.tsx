@@ -33,7 +33,7 @@ export const FAQ = () => {
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">
             DÚVIDAS <span className="text-brand-primary">FREQUENTES</span>
           </h2>
-          <p className="text-xl text-zinc-400">
+          <p className="text-xl text-zinc-300">
             Ainda tem alguma dúvida? Confira as respostas abaixo.
           </p>
         </div>
@@ -62,7 +62,7 @@ export const FAQ = () => {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-6 text-zinc-400 leading-relaxed border-t border-white/5 pt-4">
+                    <div className="px-6 pb-6 text-zinc-300 leading-relaxed border-t border-white/5 pt-4">
                       {faq.answer}
                     </div>
                   </motion.div>

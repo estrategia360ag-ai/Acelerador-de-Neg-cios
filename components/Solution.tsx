@@ -39,7 +39,7 @@ export const Solution = () => {
               <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight uppercase tracking-tighter">
                 O MÉTODO QUE VAI <span className="text-brand-primary">TURBINAR</span> SUAS VENDAS
               </h2>
-              <p className="text-xl text-zinc-400 mb-10 leading-relaxed">
+              <p className="text-xl text-zinc-300 mb-10 leading-relaxed">
                 O Acelerador de Negócios não é um curso de marketing digital genérico. É um treinamento focado em resultados imediatos para quem não tem tempo a perder.
               </p>
 
@@ -51,7 +51,7 @@ export const Solution = () => {
                     </div>
                     <div>
                       <h4 className="text-lg font-bold text-white">{benefit.title}</h4>
-                      <p className="text-zinc-400">{benefit.description}</p>
+                      <p className="text-zinc-300">{benefit.description}</p>
                     </div>
                   </div>
                 ))}

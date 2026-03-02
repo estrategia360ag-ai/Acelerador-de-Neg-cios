@@ -12,7 +12,7 @@ export const Modules = () => {
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">
             A ESCOLHA É <span className="text-brand-primary">SUA</span>
           </h2>
-          <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-xl text-zinc-300 max-w-2xl mx-auto">
             Compare como é o seu negócio hoje e como ele pode ser com o Acelerador de Negócios.
           </p>
         </div>
@@ -41,7 +41,7 @@ export const Modules = () => {
                 "O faturamento oscila e você nunca sabe quanto vai entrar",
                 "Seus concorrentes dominam a atenção do seu público"
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-4 text-zinc-400 text-lg">
+                <li key={i} className="flex items-start gap-4 text-zinc-300 text-lg">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0" />
                   {item}
                 </li>

@@ -22,7 +22,7 @@ export const Pricing = () => {
             <h2 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">
               OFERTA <span className="text-brand-primary">ESPECIAL</span> DE LANÇAMENTO
             </h2>
-            <p className="text-xl text-zinc-400">
+            <p className="text-xl text-zinc-300">
               Aproveite o preço promocional e comece a vender hoje mesmo.
             </p>
           </div>
@@ -51,7 +51,7 @@ export const Pricing = () => {
                 </p>
                 <div className="space-y-3">
                   {bonuses.map((bonus, i) => (
-                    <div key={i} className="flex items-center gap-3 text-zinc-400 text-sm">
+                    <div key={i} className="flex items-center gap-3 text-zinc-300 text-sm">
                       {bonus.icon}
                       {bonus.text}
                     </div>

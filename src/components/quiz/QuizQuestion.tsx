@@ -58,7 +58,7 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
         {/* Progress Section */}
         <div className="flex flex-col gap-3 py-4">
           <div className="flex gap-6 justify-between items-end">
-            <p className="text-slate-400 text-sm font-medium leading-normal uppercase tracking-wider">
+            <p className="text-slate-300 text-sm font-medium leading-normal uppercase tracking-wider">
               Questão {currentStep} de {totalSteps}
             </p>
             <span className="text-indigo-400 font-bold text-sm">{Math.round(progress)}%</span>
@@ -77,7 +77,7 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
             {question.title}
           </h1>
           {question.description && (
-            <p className="text-slate-400 text-base font-normal leading-relaxed">
+            <p className="text-slate-300 text-base font-normal leading-relaxed">
               {question.description}
             </p>
           )}

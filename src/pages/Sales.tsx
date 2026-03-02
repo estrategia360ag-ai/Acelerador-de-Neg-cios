@@ -26,7 +26,7 @@ export default function Sales() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight text-white">
           Pare de Depender da <span className="text-indigo-500 italic">Sorte</span> Para Vender
         </h1>
-        <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
           Implemente um sistema previsível de aquisição de clientes e escale seu faturamento com estratégia, mesmo que você esteja começando do zero.
         </p>
 
@@ -127,7 +127,7 @@ export default function Sales() {
               <div className="flex gap-1 text-indigo-400 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-400 italic mb-6 leading-relaxed">
+              <p className="text-slate-300 italic mb-6 leading-relaxed">
                 "Antes do Cliente Todo Dia, eu ficava postando e rezando. Hoje tenho uma máquina que traz leads qualificados todos os dias sem eu precisar aparecer."
               </p>
               <div className="flex items-center gap-4">
@@ -145,7 +145,7 @@ export default function Sales() {
               <div className="flex gap-1 text-indigo-400 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-400 italic mb-6 leading-relaxed">
+              <p className="text-slate-300 italic mb-6 leading-relaxed">
                 "O melhor investimento que fiz este ano. Saí de R$ 2k para R$ 15k por mês em apenas 45 dias aplicando o módulo de tráfego pago deles."
               </p>
               <div className="flex items-center gap-4">
@@ -163,7 +163,7 @@ export default function Sales() {
               <div className="flex gap-1 text-indigo-400 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
-              <p className="text-slate-400 italic mb-6 leading-relaxed">
+              <p className="text-slate-300 italic mb-6 leading-relaxed">
                 "O suporte é fenomenal e as planilhas de gestão mudaram meu jogo. Finalmente entendi onde eu estava jogando dinheiro fora no meu marketing."
               </p>
               <div className="flex items-center gap-4">
@@ -215,7 +215,7 @@ export default function Sales() {
                 {item.q}
                 <Zap className="w-5 h-5 text-indigo-500 transition-transform duration-300 group-open:rotate-180" />
               </summary>
-              <div className="px-6 pb-6 text-slate-400 leading-relaxed">
+              <div className="px-6 pb-6 text-slate-300 leading-relaxed">
                 {item.a}
               </div>
             </details>
@@ -232,7 +232,7 @@ export default function Sales() {
             <Shield className="w-10 h-10" />
             <Package className="w-10 h-10" />
           </div>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-slate-400">
             © 2024 Cliente Todo Dia. Todos os direitos reservados. <br/>
             Este site não faz parte do Facebook Inc. or Google LLC.
           </p>

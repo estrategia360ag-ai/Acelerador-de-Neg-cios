@@ -60,7 +60,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
         <h2 className="text-white tracking-tight text-[28px] font-bold leading-tight px-6 text-center pb-2 pt-2">
           ✅ Diagnóstico concluído!
         </h2>
-        <p className="text-slate-400 text-base font-normal leading-relaxed pb-6 pt-1 px-6 text-center">
+        <p className="text-slate-300 text-base font-normal leading-relaxed pb-6 pt-1 px-6 text-center">
           Seu resultado está pronto. Veja seu <span className="text-indigo-400 font-bold">Score de Visibilidade</span> e descubra como você pode criar suas próprias campanhas e parar de depender de agência.
         </p>
 
@@ -70,11 +70,11 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           <div className="flex flex-col gap-1.5">
             <label className="text-white text-sm font-bold leading-normal ml-1" htmlFor="name">Nome Completo</label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                 <PersonStanding className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-400 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="name" 
                 name="name"
                 placeholder="Seu nome" 
@@ -90,11 +90,11 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           <div className="flex flex-col gap-1.5">
             <label className="text-white text-sm font-bold leading-normal ml-1" htmlFor="email">E-mail Profissional</label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                 <Mail className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-400 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="email" 
                 name="email"
                 placeholder="nome@empresa.com.br" 
@@ -110,11 +110,11 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           <div className="flex flex-col gap-1.5">
             <label className="text-white text-sm font-bold leading-normal ml-1" htmlFor="whatsapp">WhatsApp</label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                 <MessageCircle className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-400 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="whatsapp" 
                 name="whatsapp"
                 placeholder="(00) 00000-0000" 
@@ -130,11 +130,11 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           <div className="flex flex-col gap-1.5">
             <label className="text-white text-sm font-bold leading-normal ml-1" htmlFor="company">Nome da Empresa</label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                 <Building2 className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-400 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="company" 
                 name="company"
                 placeholder="Sua empresa" 
@@ -150,11 +150,11 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           <div className="flex flex-col gap-1.5">
             <label className="text-white text-sm font-bold leading-normal ml-1" htmlFor="city">Cidade</label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
                 <MapPin className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-400 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="city" 
                 name="city"
                 placeholder="São Paulo, SP" 
@@ -178,7 +178,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           <span className="truncate">VER MEU RESULTADO AGORA</span>
           <ArrowRight className="ml-2 w-5 h-5" />
         </button>
-        <div className="flex items-center justify-center gap-2 mt-3 text-slate-500">
+        <div className="flex items-center justify-center gap-2 mt-3 text-slate-400">
           <Lock className="w-3 h-3" />
           <p className="text-[11px] font-medium text-center text-slate-400">Seus dados estão seguros e não faremos spam.</p>
         </div>

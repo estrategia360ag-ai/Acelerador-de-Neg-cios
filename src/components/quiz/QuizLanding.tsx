@@ -37,7 +37,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
                 <p className="text-white text-lg font-bold leading-relaxed max-w-lg mt-2">
                   Descubra em 2 minutos se sua empresa está INVISÍVEL — e se você está jogando dinheiro fora com agência ou postando sem resultado.
                 </p>
-                <p className="text-slate-400 text-base font-medium leading-relaxed max-w-lg mt-2">
+                <p className="text-slate-300 text-base font-medium leading-relaxed max-w-lg mt-2">
                   Responda 8 perguntas rápidas e receba um diagnóstico mostrando por que você ainda não consegue atrair clientes por conta própria — e como mudar isso SEM depender de ninguém.
                 </p>
               </div>
@@ -49,7 +49,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
                   <span className="text-white text-base font-extrabold uppercase tracking-wide z-10">Fazer Diagnóstico Gratuito</span>
                   <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                 </button>
-                <p className="text-xs text-slate-500 text-center max-w-[480px]">
+                <p className="text-xs text-slate-400 text-center max-w-[480px]">
                   Sem necessidade de cartão de crédito.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
                   </div>
                   <div>
                     <p className="text-xs font-bold text-white">Análise de SEO</p>
-                    <p className="text-[10px] text-slate-400">Detectando falhas...</p>
+                    <p className="text-[10px] text-slate-300">Detectando falhas...</p>
                   </div>
                 </div>
                 <img 
@@ -102,7 +102,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
             <h2 className="text-white text-3xl font-extrabold leading-tight tracking-tight">
               Por que fazer este teste?
             </h2>
-            <p className="text-slate-400 text-base leading-relaxed max-w-2xl mx-auto">
+            <p className="text-slate-300 text-base leading-relaxed max-w-2xl mx-auto">
               Entenda os pontos cegos do seu negócio e descubra exatamente como atrair mais clientes recorrentes da sua região.
             </p>
           </div>
@@ -113,7 +113,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-white text-lg font-bold">Diagnóstico Preciso</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-300 text-sm leading-relaxed">
                   Análise detalhada da sua presença online comparada aos seus concorrentes locais diretos.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-white text-lg font-bold">Plano de Ação</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-300 text-sm leading-relaxed">
                   Receba um checklist com passos claros e práticos para melhorar sua visibilidade imediatamente.
                 </p>
               </div>
@@ -135,7 +135,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-white text-lg font-bold">Resultados Rápidos</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-300 text-sm leading-relaxed">
                   Foque nas mudanças que geram retorno financeiro e tráfego real para sua loja ou escritório.
                 </p>
               </div>
@@ -152,7 +152,7 @@ export function QuizLanding({ onStart }: QuizLandingProps) {
             >
               Começar Agora
             </button>
-            <div className="flex items-center justify-center gap-2 text-xs text-slate-500">
+            <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
               <ShieldCheck className="w-4 h-4" />
               <span>Seus dados estão seguros conosco</span>
             </div>

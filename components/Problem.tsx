@@ -30,7 +30,7 @@ export const Problem = () => {
           <h2 className="text-3xl md:text-5xl font-black text-white mb-6 uppercase tracking-tighter">
             ATÉ QUANDO VOCÊ VAI <span className="text-red-500">QUEIMAR DINHEIRO</span> COM ANÚNCIOS QUE NÃO VENDEM?
           </h2>
-          <p className="text-xl text-zinc-400">
+          <p className="text-xl text-zinc-300">
             A maioria dos empreendedores comete o erro de delegar o que há de mais importante no negócio: a aquisição de clientes.
           </p>
         </div>
@@ -49,7 +49,7 @@ export const Problem = () => {
                 {pain.icon}
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">{pain.title}</h3>
-              <p className="text-zinc-400 leading-relaxed">{pain.description}</p>
+              <p className="text-zinc-300 leading-relaxed">{pain.description}</p>
             </motion.div>
           ))}
         </div>
