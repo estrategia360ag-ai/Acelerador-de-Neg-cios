@@ -30,8 +30,7 @@ export const Pricing = () => {
               <h3 className="text-3xl font-bold text-white">O que você leva:</h3>
               <ul className="space-y-4">
                 {[
-                  "Acesso vitalício ao treinamento",
-                  "Todas as atualizações futuras",
+                "Todas as atualizações futuras",
                   "Suporte direto na plataforma",
                   "Certificado de conclusão"
                 ].map((item, i) => (

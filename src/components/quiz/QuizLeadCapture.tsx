@@ -42,7 +42,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
       {/* Progress Indicator */}
       <div className="px-4 py-2 w-full">
         <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
-          <div className="h-full bg-[#13ec37] w-[95%] rounded-full"></div>
+          <div className="h-full bg-indigo-500 w-[95%] rounded-full"></div>
         </div>
         <p className="text-xs text-slate-400 text-right mt-1 font-medium">95% Concluído</p>
       </div>
@@ -51,8 +51,8 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
       <main className="flex-1 overflow-y-auto pb-24">
         {/* Icon/Hero Area */}
         <div className="flex justify-center pt-6 pb-2">
-          <div className="size-20 bg-[#13ec37]/20 rounded-full flex items-center justify-center animate-pulse">
-            <CheckCircle className="w-10 h-10 text-[#13ec37]" />
+          <div className="size-20 bg-indigo-500/20 rounded-full flex items-center justify-center animate-pulse">
+            <CheckCircle className="w-10 h-10 text-indigo-400" />
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
           ✅ Diagnóstico concluído!
         </h2>
         <p className="text-slate-400 text-base font-normal leading-relaxed pb-6 pt-1 px-6 text-center">
-          Seu resultado está pronto. Veja seu <span className="text-[#0fb82a] font-bold">Score de Visibilidade</span> e descubra como você pode criar suas próprias campanhas e parar de depender de agência.
+          Seu resultado está pronto. Veja seu <span className="text-indigo-400 font-bold">Score de Visibilidade</span> e descubra como você pode criar suas próprias campanhas e parar de depender de agência.
         </p>
 
         {/* Form */}
@@ -74,7 +74,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
                 <PersonStanding className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-[#13ec37] border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="name" 
                 name="name"
                 placeholder="Seu nome" 
@@ -94,7 +94,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
                 <Mail className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-[#13ec37] border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="email" 
                 name="email"
                 placeholder="nome@empresa.com.br" 
@@ -114,7 +114,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
                 <MessageCircle className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-[#13ec37] border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="whatsapp" 
                 name="whatsapp"
                 placeholder="(00) 00000-0000" 
@@ -134,7 +134,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
                 <Building2 className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-[#13ec37] border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="company" 
                 name="company"
                 placeholder="Sua empresa" 
@@ -154,7 +154,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
                 <MapPin className="w-5 h-5" />
               </span>
               <input 
-                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-[#13ec37] border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
+                className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white placeholder:text-slate-500 focus:outline-0 focus:ring-2 focus:ring-indigo-500 border-0 bg-zinc-900 shadow-sm h-14 pl-12 pr-4 text-base font-normal leading-normal transition-all" 
                 id="city" 
                 name="city"
                 placeholder="São Paulo, SP" 
@@ -173,7 +173,7 @@ export function QuizLeadCapture({ onSubmit, onBack }: QuizLeadCaptureProps) {
       <div className="absolute bottom-0 left-0 right-0 p-4 bg-[#0a0a0a]/90 backdrop-blur-md border-t border-slate-800 z-20">
         <button 
           onClick={handleSubmit}
-          className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 bg-[#13ec37] text-slate-900 text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#0fb82a] transition-colors shadow-lg shadow-[#13ec37]/20"
+          className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 bg-indigo-600 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-indigo-500 transition-colors shadow-lg shadow-indigo-600/20"
         >
           <span className="truncate">VER MEU RESULTADO AGORA</span>
           <ArrowRight className="ml-2 w-5 h-5" />

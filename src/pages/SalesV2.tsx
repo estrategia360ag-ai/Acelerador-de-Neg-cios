@@ -7,10 +7,10 @@ export function SalesV2() {
       <header className="fixed w-full z-50 top-0 left-0 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="material-symbols-outlined text-[#13ec37] text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
+            <span className="material-symbols-outlined text-indigo-500 text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
             <span className="font-extrabold text-lg tracking-tight">CLIENTE TODO DIA</span>
           </div>
-          <a href="#offer" className="bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-[#13ec37]/20">
+          <a href="#offer" className="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-indigo-500/20">
             Começar Agora
           </a>
         </div>
@@ -19,27 +19,26 @@ export function SalesV2() {
       <main className="pt-20">
         {/* Section 1: HERO */}
         <section className="relative pt-16 pb-20 px-4 overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-[#13ec37]/10 blur-[120px] rounded-full -z-10"></div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-indigo-500/10 blur-[120px] rounded-full -z-10"></div>
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-[#13ec37] dark:text-[#13ec37] text-xs md:text-sm font-bold uppercase tracking-widest mb-6 px-4">
+            <p className="text-indigo-400 dark:text-indigo-400 text-xs md:text-sm font-bold uppercase tracking-widest mb-6 px-4">
               Para donos de negócio local que estão CANSADOS de depender de agência, gestor de tráfego ou da sorte para vender
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8 text-white">
-              Aprenda a Criar Suas Próprias Campanhas e Receba <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#13ec37] to-emerald-600">Clientes Todo Dia</span>
+              Aprenda a Criar Suas Próprias Campanhas e Receba <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-violet-600">Clientes Todo Dia</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
               O Cliente Todo Dia™ é o sistema de 3 passos que ensina donos de negócio local a criarem seus próprios anúncios no Instagram e Facebook — gastando a partir de R$ 6/dia — e lotarem a agenda sem depender de ninguém.
             </p>
             <div className="flex flex-col gap-4 items-center">
-              <a href="#offer" className="w-full sm:w-auto bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-lg font-black py-5 px-10 rounded-2xl shadow-xl shadow-[#13ec37]/30 transition-all transform hover:scale-105 flex flex-col items-center justify-center gap-1">
+              <a href="#offer" className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white text-lg font-black py-5 px-10 rounded-2xl shadow-xl shadow-indigo-500/30 transition-all transform hover:scale-105 flex flex-col items-center justify-center gap-1">
                 <span className="flex items-center gap-2">
                   QUERO CRIAR MINHAS CAMPANHAS <span className="material-symbols-outlined font-bold">arrow_forward</span>
                 </span>
                 <span className="text-sm font-bold opacity-80 uppercase tracking-wider">R$ 197 | 12x de R$ 19,70</span>
               </a>
               <div className="flex items-center gap-6 text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-4">
-                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[#13ec37] text-sm">verified_user</span> Acesso Vitalício</span>
-                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-[#13ec37] text-sm">lock</span> Pagamento Seguro</span>
+                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-indigo-500 text-sm">lock</span> Pagamento Seguro</span>
               </div>
             </div>
           </div>
@@ -67,9 +66,9 @@ export function SalesV2() {
                 </div>
               ))}
             </div>
-            <div className="text-center p-8 rounded-3xl bg-[#13ec37]/5 border-2 border-dashed border-[#13ec37]/30">
+            <div className="text-center p-8 rounded-3xl bg-indigo-500/5 border-2 border-dashed border-indigo-500/30">
               <p className="text-xl md:text-2xl font-black text-white italic leading-tight">
-                "O problema não é seu produto. É que ninguém te ensinou a fazer ele <span className="text-[#13ec37]">APARECER</span>."
+                "O problema não é seu produto. É que ninguém te ensinou a fazer ele <span className="text-indigo-400">APARECER</span>."
               </p>
             </div>
           </div>
@@ -133,15 +132,15 @@ export function SalesV2() {
               </div>
 
               {/* Scenario 3 */}
-              <div className="bg-[#13ec37] p-8 rounded-3xl border-4 border-slate-800 shadow-2xl shadow-[#13ec37]/30 transform md:scale-105">
-                <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest mb-4">CENÁRIO 3</h3>
-                <p className="text-lg font-bold mb-6 text-slate-900">VOCÊ aprende e faz</p>
-                <div className="space-y-3 text-sm mb-8 text-slate-900/80">
-                  <div className="flex justify-between border-b border-slate-900/10 pb-2">
+              <div className="bg-indigo-600 p-8 rounded-3xl border-4 border-slate-800 shadow-2xl shadow-indigo-500/30 transform md:scale-105">
+                <h3 className="text-xs font-black text-white uppercase tracking-widest mb-4">CENÁRIO 3</h3>
+                <p className="text-lg font-bold mb-6 text-white">VOCÊ aprende e faz</p>
+                <div className="space-y-3 text-sm mb-8 text-white/80">
+                  <div className="flex justify-between border-b border-white/10 pb-2">
                     <span className="font-medium">Invest. mensal</span>
                     <span className="font-bold">R$ 180 (R$ 6/dia)</span>
                   </div>
-                  <div className="flex justify-between border-b border-slate-900/10 pb-2">
+                  <div className="flex justify-between border-b border-white/10 pb-2">
                     <span className="font-medium">Curso (uma vez)</span>
                     <span className="font-bold">R$ 197</span>
                   </div>
@@ -150,7 +149,7 @@ export function SalesV2() {
                     <span className="font-black">100% SEU</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-900 bg-white/40 p-3 rounded-xl">
+                <div className="flex items-center gap-2 text-xs font-bold text-white bg-white/20 p-3 rounded-xl">
                   <span className="material-symbols-outlined text-sm">check_circle</span>
                   Resultado: Clientes todo dia
                 </div>
@@ -162,7 +161,7 @@ export function SalesV2() {
 
         {/* Section 4: COMPARAÇÃO */}
         <section className="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#13ec37]/10 blur-[120px] rounded-full"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 blur-[120px] rounded-full"></div>
           <div className="max-w-5xl mx-auto relative z-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-16 tracking-tight">
               Três caminhos. Só um faz sentido.
@@ -195,8 +194,8 @@ export function SalesV2() {
                 </ul>
               </div>
               {/* Path 3 */}
-              <div className="p-8 bg-[#13ec37]/10 border-2 border-[#13ec37]/50">
-                <h3 className="text-[#13ec37] font-black mb-6 flex items-center gap-2">
+              <div className="p-8 bg-indigo-500/10 border-2 border-indigo-500/50">
+                <h3 className="text-indigo-400 font-black mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined">check_circle</span> FAZER VOCÊ MESMO
                 </h3>
                 <ul className="space-y-4 text-sm text-white">
@@ -229,15 +228,15 @@ export function SalesV2() {
                 { step: "PASSO 3", title: "CONVERTER", icon: "chat", desc: "Você aprende a criar anúncios que fazem a pessoa te chamar no WhatsApp, ligar ou ir até sua loja.", highlight: "Sem site. Sem formulário complicado. A pessoa vê, clica e te manda mensagem." }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col md:flex-row gap-8 items-start group">
-                  <div className="w-16 h-16 shrink-0 bg-[#13ec37]/10 text-[#13ec37] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 shrink-0 bg-indigo-500/10 text-indigo-400 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>{item.iconName || item.icon}</span>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-black text-white mb-3 flex items-center gap-3">
-                      <span className="text-[#13ec37] text-sm tracking-widest">[{item.step}]</span> {item.title}
+                      <span className="text-indigo-400 text-sm tracking-widest">[{item.step}]</span> {item.title}
                     </h3>
                     <p className="text-slate-400 mb-4 leading-relaxed">{item.desc}</p>
-                    <div className="p-4 bg-white/5 rounded-xl border-l-4 border-[#13ec37]">
+                    <div className="p-4 bg-white/5 rounded-xl border-l-4 border-indigo-500">
                       <p className="text-sm font-bold text-white">{item.highlight}</p>
                     </div>
                   </div>
@@ -277,19 +276,19 @@ export function SalesV2() {
                   <ul className="grid md:grid-cols-2 gap-3 mb-6">
                     {module.points.map((p, j) => (
                       <li key={j} className="flex items-center gap-2 text-sm text-slate-300 font-medium">
-                        <span className="material-symbols-outlined text-[#13ec37] text-base">check_circle</span> {p}
+                        <span className="material-symbols-outlined text-indigo-500 text-base">check_circle</span> {p}
                       </li>
                     ))}
                   </ul>
-                  <div className="inline-flex items-center gap-2 bg-[#13ec37]/10 text-[#13ec37] px-4 py-2 rounded-lg text-xs font-black uppercase tracking-widest">
+                  <div className="inline-flex items-center gap-2 bg-indigo-500/10 text-indigo-400 px-4 py-2 rounded-lg text-xs font-black uppercase tracking-widest">
                     <span className="material-symbols-outlined text-sm">verified</span> Resultado: {module.result}
                   </div>
                 </div>
               ))}
             </div>
             <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-slate-400 font-bold uppercase tracking-widest text-xs">
-              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#13ec37]">schedule</span> Tempo total: ~3 horas</span>
-              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#13ec37]">calendar_today</span> Em 1 dia já pode estar rodando</span>
+              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-indigo-500">schedule</span> Tempo total: ~3 horas</span>
+              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-indigo-500">calendar_today</span> Em 1 dia já pode estar rodando</span>
             </div>
           </div>
         </section>
@@ -305,12 +304,12 @@ export function SalesV2() {
                 { title: "BÔNUS 1: 15 Modelos de Anúncio Prontos", price: "R$ 97", desc: "Textos testados. VOCÊ só troca foto e dados do seu negócio. Nunca mais fica travado sem saber o que escrever.", icon: "description" },
                 { title: "BÔNUS 2: Checklist de Campanha Lucrativa", price: "R$ 47", desc: "VOCÊ segue o passo a passo e não esquece nada. Igual piloto de avião: checa antes de decolar.", icon: "checklist" },
                 { title: "BÔNUS 3: Calculadora de Investimento", price: "R$ 37", desc: "VOCÊ descobre quanto investir por dia pro SEU tipo de negócio. Sem chutar.", icon: "calculate" },
-                { title: "BÔNUS 4: Comunidade WhatsApp Exclusiva", price: "R$ 29/mês", desc: "Grupo de donos de negócio que fazem seus próprios anúncios. Troca de experiência + suporte.", icon: "groups" },
+                { title: "BÔNUS 4: Comunidade WhatsApp Exclusive", price: "R$ 29/mês", desc: "Grupo de donos de negócio que fazem seus próprios anúncios. Troca de experiência + suporte.", icon: "groups" },
                 { title: "BÔNUS 5: Aula \"Vídeo que Vende\"", price: "R$ 97", desc: "VOCÊ aprende a criar vídeo com celular. Sem aparecer. Sem equipamento caro.", icon: "videocam" }
               ].map((bonus, i) => (
                 <div key={i} className="p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm group">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 shrink-0 bg-[#13ec37]/20 text-[#13ec37] rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform">
+                    <div className="w-12 h-12 shrink-0 bg-indigo-500/20 text-indigo-400 rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform">
                       <span className="material-symbols-outlined">{bonus.icon}</span>
                     </div>
                     <div>
@@ -324,11 +323,11 @@ export function SalesV2() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 text-center bg-[#13ec37]/10 p-8 rounded-3xl border-2 border-dashed border-[#13ec37]/30">
+            <div className="mt-12 text-center bg-indigo-500/10 p-8 rounded-3xl border-2 border-dashed border-indigo-500/30">
               <p className="text-slate-400 text-sm font-bold uppercase tracking-widest mb-2">Valor total dos bônus</p>
               <div className="flex items-center justify-center gap-4">
                 <span className="text-3xl font-black text-slate-500 line-through">R$ 307</span>
-                <span className="text-5xl font-black text-[#13ec37] drop-shadow-[0_0_15px_rgba(19,236,55,0.4)]">GRÁTIS ✅</span>
+                <span className="text-5xl font-black text-indigo-400 drop-shadow-[0_0_15px_rgba(79,70,229,0.4)]">GRÁTIS ✅</span>
               </div>
             </div>
           </div>
@@ -347,13 +346,13 @@ export function SalesV2() {
                 { case: 3, name: "Ana, Loja de Roupas, Goiânia/GO", text: "Demiti a agência no segundo mês. Faço tudo sozinha agora. Gasto menos e vendo mais.", before: "R$ 1.500/mês de agência", now: "faz sozinha, +137% faturamento" }
               ].map((item, i) => (
                 <div key={i} className="bg-white/5 p-8 rounded-3xl border border-white/5 relative">
-                  <span className="material-symbols-outlined absolute top-6 right-8 text-[#13ec37]/20 text-6xl">format_quote</span>
+                  <span className="material-symbols-outlined absolute top-6 right-8 text-indigo-500/20 text-6xl">format_quote</span>
                   <p className="text-lg font-bold text-slate-200 mb-6 leading-relaxed relative z-10 italic">"{item.text}"</p>
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-t border-slate-800 pt-6">
                     <p className="text-sm font-black text-white">— {item.name}</p>
                     <div className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest">
                       <span className="text-red-500 line-through opacity-60">Antes: {item.before}</span>
-                      <span className="text-[#13ec37] bg-[#13ec37]/10 px-3 py-1 rounded-full">Agora: {item.now}</span>
+                      <span className="text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">Agora: {item.now}</span>
                     </div>
                   </div>
                 </div>
@@ -388,7 +387,7 @@ export function SalesV2() {
                 <div className="text-center">
                   <h3 className="text-2xl font-black text-white mb-8 uppercase tracking-widest">O Cliente Todo Dia™:</h3>
                   <div className="mb-10">
-                    <p className="text-6xl md:text-8xl font-black text-[#13ec37] tracking-tighter mb-2">R$ 197</p>
+                    <p className="text-6xl md:text-8xl font-black text-indigo-400 tracking-tighter mb-2">R$ 197</p>
                     <p className="text-xl font-bold text-slate-400">(pagamento único) ou 12x de R$ 19,70</p>
                   </div>
                   <div className="space-y-4 mb-10 text-slate-300 font-bold text-lg">
@@ -396,9 +395,9 @@ export function SalesV2() {
                     <p>Pra sempre. Sem mensalidade. Sem dependência.</p>
                   </div>
                   <div className="bg-white/5 p-6 rounded-2xl mb-10">
-                    <p className="text-sm font-black text-[#13ec37] uppercase tracking-widest">O conhecimento fica com VOCÊ. Ninguém tira isso.</p>
+                    <p className="text-sm font-black text-indigo-400 uppercase tracking-widest">O conhecimento fica com VOCÊ. Ninguém tira isso.</p>
                   </div>
-                  <a href="#" className="block w-full bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-xl font-black py-6 rounded-2xl shadow-2xl shadow-[#13ec37]/40 transition-all transform hover:scale-[1.02] active:scale-[0.98]">
+                  <a href="#" className="block w-full bg-indigo-600 hover:bg-indigo-500 text-white text-xl font-black py-6 rounded-2xl shadow-2xl shadow-indigo-500/40 transition-all transform hover:scale-[1.02] active:scale-[0.98]">
                     QUERO CRIAR MINHAS CAMPANHAS →
                   </a>
                 </div>
@@ -411,7 +410,7 @@ export function SalesV2() {
         <section className="py-24 px-4">
           <div className="max-w-3xl mx-auto bg-slate-900 p-10 md:p-16 rounded-[40px] border border-slate-800 shadow-sm text-center">
             <div className="w-24 h-24 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-8">
-              <span className="material-symbols-outlined text-6xl text-[#13ec37]" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
+              <span className="material-symbols-outlined text-6xl text-indigo-500" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
             </div>
             <h2 className="text-2xl md:text-3xl font-black text-white mb-6 uppercase tracking-tight">
               🛡️ GARANTIA INCONDICIONAL DE 7 DIAS
@@ -445,7 +444,7 @@ export function SalesV2() {
                 <details key={i} className="group bg-white/5 rounded-2xl border border-white/5 transition-all duration-300">
                   <summary className="flex justify-between items-center cursor-pointer p-6 font-bold text-white list-none">
                     {faq.q}
-                    <span className="material-symbols-outlined transition-transform group-open:rotate-180 text-[#13ec37]">expand_more</span>
+                    <span className="material-symbols-outlined transition-transform group-open:rotate-180 text-indigo-500">expand_more</span>
                   </summary>
                   <div className="px-6 pb-6 text-slate-400 text-sm leading-relaxed font-medium">
                     {faq.a}
@@ -458,7 +457,7 @@ export function SalesV2() {
 
         {/* Section 12: CTA FINAL */}
         <section className="py-24 px-4 bg-slate-900 text-white text-center relative overflow-hidden">
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-96 bg-[#13ec37]/10 blur-[120px] rounded-full"></div>
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-96 bg-indigo-500/10 blur-[120px] rounded-full"></div>
           <div className="max-w-4xl mx-auto relative z-10">
             <h2 className="text-3xl md:text-5xl font-black mb-16 tracking-tight">Você tem 3 opções agora:</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-16">
@@ -481,8 +480,8 @@ export function SalesV2() {
                   <li>• Volta pra estaca zero se parar</li>
                 </ul>
               </div>
-              <div className="p-8 rounded-3xl bg-[#13ec37]/10 border-2 border-[#13ec37] text-left">
-                <h3 className="font-black text-[#13ec37] mb-4 uppercase tracking-widest text-xs">OPÇÃO 3</h3>
+              <div className="p-8 rounded-3xl bg-indigo-500/10 border-2 border-indigo-500 text-left">
+                <h3 className="font-black text-indigo-400 mb-4 uppercase tracking-widest text-xs">OPÇÃO 3</h3>
                 <p className="font-bold mb-4">Aprender a fazer VOCÊ MESMO.</p>
                 <ul className="text-xs space-y-2 text-white">
                   <li className="font-bold">• R$ 197 (uma vez)</li>
@@ -494,15 +493,14 @@ export function SalesV2() {
             </div>
             <div className="space-y-8">
               <div className="flex flex-col items-center gap-2">
-                <p className="text-4xl md:text-6xl font-black text-[#13ec37]">R$ 197</p>
+                <p className="text-4xl md:text-6xl font-black text-indigo-400">R$ 197</p>
                 <p className="text-xl font-bold text-slate-400">ou 12x de R$ 19,70</p>
               </div>
-              <a href="#" className="inline-block w-full max-w-md bg-[#13ec37] hover:bg-[#0fd630] text-slate-900 text-xl font-black py-6 rounded-2xl shadow-2xl shadow-[#13ec37]/40 transition-all transform hover:scale-105 active:scale-95">
+              <a href="#" className="inline-block w-full max-w-md bg-indigo-600 hover:bg-indigo-500 text-white text-xl font-black py-6 rounded-2xl shadow-2xl shadow-indigo-500/40 transition-all transform hover:scale-105 active:scale-95">
                 QUERO APRENDER A CRIAR MINHAS CAMPANHAS →
               </a>
               <div className="flex flex-wrap justify-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">verified_user</span> Garantia 7 dias</span>
-                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">infinity</span> Acesso vitalício</span>
                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">lock</span> Pagamento seguro</span>
                 <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">support_agent</span> Suporte incluso</span>
               </div>
@@ -518,7 +516,7 @@ export function SalesV2() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <span className="material-symbols-outlined text-[#13ec37]" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
+              <span className="material-symbols-outlined text-indigo-500" style={{ fontVariationSettings: "'FILL' 1" }}>rocket</span>
               <span className="font-black tracking-tight text-white">CLIENTE TODO DIA</span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs">
@@ -528,19 +526,19 @@ export function SalesV2() {
           <div>
             <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Treinamento</h4>
             <ul className="space-y-3 text-xs font-bold">
-              <li><a className="hover:text-[#13ec37] transition" href="#">Módulos</a></li>
-              <li><a className="hover:text-[#13ec37] transition" href="#">Bônus</a></li>
-              <li><a className="hover:text-[#13ec37] transition" href="#">Área de Membros</a></li>
-              <li><a className="hover:text-[#13ec37] transition" href="#">Suporte</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Módulos</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Bônus</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Área de Membros</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Suporte</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Legal</h4>
             <ul className="space-y-3 text-xs font-bold">
-              <li><a className="hover:text-[#13ec37] transition" href="#">Termos de Uso</a></li>
-              <li><a className="hover:text-[#13ec37] transition" href="#">Privacidade</a></li>
-              <li><a className="hover:text-[#13ec37] transition" href="#">Políticas de Cookies</a></li>
-              <li><a className="hover:text-[#13ec37] transition" href="#">Reembolso</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Termos de Uso</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Privacidade</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Políticas de Cookies</a></li>
+              <li><a className="hover:text-indigo-400 transition" href="#">Reembolso</a></li>
             </ul>
           </div>
         </div>

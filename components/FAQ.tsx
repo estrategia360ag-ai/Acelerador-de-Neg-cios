@@ -16,10 +16,6 @@ const faqs = [
     answer: "Sim! Se você vende um produto ou serviço e quer atrair mais clientes através da internet, o método funciona para você. Seja você um prestador de serviços, dono de loja física ou infoprodutor."
   },
   {
-    question: "O acesso ao curso é vitalício?",
-    answer: "Sim! Uma vez que você se inscreve, o acesso é seu para sempre, incluindo todas as futuras atualizações do treinamento."
-  },
-  {
     question: "Como funciona o suporte?",
     answer: "Temos uma área de membros exclusiva onde você pode tirar todas as suas dúvidas abaixo de cada aula. Nossa equipe responde diariamente."
   }

@@ -12,9 +12,9 @@ export function QuizResult({ score, totalScore, onCtaClick }: QuizResultProps) {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans">
-      <header className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#13ec37]/10">
+      <header className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-indigo-500/10">
         <div className="max-w-xl mx-auto flex items-center p-4 justify-between">
-          <div className="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-[#13ec37]/10 cursor-pointer">
+          <div className="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-indigo-500/10 cursor-pointer">
             <ArrowLeft className="w-6 h-6" />
           </div>
           <h1 className="text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center">Diagnóstico de Visibilidade</h1>
@@ -41,17 +41,17 @@ export function QuizResult({ score, totalScore, onCtaClick }: QuizResultProps) {
         </section>
         {/* Section 2: Financial Impact */}
         <section className="px-6 py-2">
-          <div className="bg-zinc-900 rounded-xl overflow-hidden shadow-md border-l-4 border-[#13ec37] border border-white/5">
+          <div className="bg-zinc-900 rounded-xl overflow-hidden shadow-md border-l-4 border-indigo-500 border border-white/5">
             <div className="p-6">
               <div className="flex items-center gap-3 mb-4">
-                <AlertCircle className="text-[#13ec37] w-8 h-8" />
+                <AlertCircle className="text-indigo-400 w-8 h-8" />
                 <h3 className="text-xl font-bold text-white">O que isso significa na prática?</h3>
               </div>
               <div className="space-y-4">
                 <p className="text-slate-400 leading-relaxed">
                   A baixa visibilidade local está fazendo seu negócio perder clientes qualificados todos os dias para a concorrência.
                 </p>
-                <div className="bg-[#13ec37]/10 p-4 rounded-lg">
+                <div className="bg-indigo-500/10 p-4 rounded-lg">
                   <p className="text-slate-500 text-sm uppercase font-bold tracking-tighter">Perda estimada de faturamento</p>
                   <p className="text-2xl font-black text-white">R$ 86.400,00 <span className="text-sm font-normal text-slate-400">/ano</span></p>
                 </div>
@@ -94,26 +94,26 @@ export function QuizResult({ score, totalScore, onCtaClick }: QuizResultProps) {
         </section>
         {/* Section 4: The Turnaround */}
         <section className="p-6">
-          <div className="bg-[#13ec37]/5 rounded-xl p-8 text-center border-2 border-dashed border-[#13ec37]/20">
+          <div className="bg-indigo-500/5 rounded-xl p-8 text-center border-2 border-dashed border-indigo-500/20">
             <h3 className="text-2xl font-black text-white mb-2">A Virada</h3>
-            <p className="text-[#13ec37] font-bold mb-6 italic">"A boa notícia: Seu problema tem solução"</p>
+            <p className="text-indigo-400 font-bold mb-6 italic">"A boa notícia: Seu problema tem solução"</p>
             <div className="grid grid-cols-1 gap-6 text-left">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 size-8 bg-[#13ec37] text-slate-900 font-black rounded-full flex items-center justify-center">1</div>
+                <div className="flex-shrink-0 size-8 bg-indigo-600 text-white font-black rounded-full flex items-center justify-center">1</div>
                 <div>
                   <p className="font-bold text-lg text-white">Aparecer</p>
                   <p className="text-sm text-slate-400">Estar onde seus clientes estão procurando agora.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="flex-shrink-0 size-8 bg-[#13ec37] text-slate-900 font-black rounded-full flex items-center justify-center">2</div>
+                <div className="flex-shrink-0 size-8 bg-indigo-600 text-white font-black rounded-full flex items-center justify-center">2</div>
                 <div>
                   <p className="font-bold text-lg text-white">Atrair</p>
                   <p className="text-sm text-slate-400">Criar uma oferta irresistível para quem te encontra.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="flex-shrink-0 size-8 bg-[#13ec37] text-slate-900 font-black rounded-full flex items-center justify-center">3</div>
+                <div className="flex-shrink-0 size-8 bg-indigo-600 text-white font-black rounded-full flex items-center justify-center">3</div>
                 <div>
                   <p className="font-bold text-lg text-white">Converter</p>
                   <p className="text-sm text-slate-400">Transformar interessados em clientes pagantes.</p>
@@ -126,7 +126,7 @@ export function QuizResult({ score, totalScore, onCtaClick }: QuizResultProps) {
         <section className="p-6 space-y-4">
           <button 
             onClick={onCtaClick}
-            className="w-full bg-[#13ec37] text-slate-900 font-black text-lg py-5 rounded-xl shadow-[0_10px_20px_-5px_rgba(19,236,55,0.4)] active:scale-95 transition-transform hover:brightness-110"
+            className="w-full bg-indigo-600 text-white font-black text-lg py-5 rounded-xl shadow-[0_10px_20px_-5px_rgba(79,70,229,0.4)] active:scale-95 transition-transform hover:brightness-110"
           >
             QUERO SAIR DA INVISIBILIDADE AGORA
           </button>

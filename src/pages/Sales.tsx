@@ -2,30 +2,29 @@ import { Zap, Play, Volume2, ShieldCheck, Award, CalendarCheck, Star, CreditCard
 
 export function Sales() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans">
+    <div className="min-h-screen bg-slate-950 text-slate-200 font-sans">
       {/* Top Navigation Bar */}
-      <nav className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#13ec37]/10">
+      <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-indigo-500/10">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Zap className="text-[#13ec37] w-8 h-8" />
-            <span className="font-bold text-lg tracking-tight uppercase">Cliente Todo Dia</span>
+            <Zap className="text-indigo-500 w-8 h-8" />
+            <span className="font-bold text-lg tracking-tight uppercase text-white">Cliente Todo Dia</span>
           </div>
           <div className="hidden md:flex gap-6 text-sm font-medium opacity-80">
-            <a className="hover:text-[#13ec37] transition-colors" href="#metodo">O Método</a>
-            <a className="hover:text-[#13ec37] transition-colors" href="#resultados">Resultados</a>
-            <a className="hover:text-[#13ec37] transition-colors" href="#faq">FAQ</a>
+            <a className="hover:text-indigo-400 transition-colors" href="#metodo">O Método</a>
+            <a className="hover:text-indigo-400 transition-colors" href="#resultados">Resultados</a>
+            <a className="hover:text-indigo-400 transition-colors" href="#faq">FAQ</a>
           </div>
-          <button className="bg-[#13ec37]/20 text-[#13ec37] px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">Acesso Vitalício</button>
         </div>
       </nav>
 
       {/* Hero Section (Above the Fold) */}
       <header className="pt-12 pb-16 px-4 max-w-5xl mx-auto text-center">
-        <span className="inline-block bg-[#13ec37]/10 text-[#13ec37] text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-[0.2em] mb-6">
+        <span className="inline-block bg-indigo-500/10 text-indigo-400 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-[0.2em] mb-6 border border-indigo-500/20">
           Método Testado e Validado por +2.400 Alunos
         </span>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
-          Pare de Depender da <span className="text-[#13ec37] italic">Sorte</span> Para Vender
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight text-white">
+          Pare de Depender da <span className="text-indigo-500 italic">Sorte</span> Para Vender
         </h1>
         <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
           Implemente um sistema previsível de aquisição de clientes e escale seu faturamento com estratégia, mesmo que você esteja começando do zero.
@@ -33,19 +32,19 @@ export function Sales() {
 
         {/* VSL Video Player */}
         <div className="relative max-w-4xl mx-auto group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#13ec37]/50 to-emerald-500/30 rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500/50 to-violet-500/30 rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
           <div className="relative bg-slate-900 rounded-xl overflow-hidden aspect-video shadow-2xl border border-white/10">
             <div className="absolute inset-0 flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLhTF3UXzckEKS_A4fdzZG63Y6jpk-rMC0dsNCZ7QjLeupzJRNGiZAUeDWs3m5i2Y1ikp0P-881cc4W-AIRx29tXHJ-B7r2tgLcoN3Zl-LNG_dBaqYV9Iqg2fBOSaGlahArjuG21rajwdXMgtUXB0mbPXTkQgdjb6LwydZiKOaeUfFZDEL1dvH1DljeeQkpNCDBEGXaUIfVEVcJhSDHxBXkR-CmXKSCY4Xg2Qsc-h9ZFzAmnZ7zskWUUlx5pTiUTDGvl4updwSd85W')" }}>
               {/* Overlay with Thumbnail Text */}
               <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center p-6 text-center">
                 <h3 className="text-white text-3xl md:text-5xl font-black mb-8 leading-tight max-w-xl">
-                  SEU NEGÓCIO ESTÁ <span className="text-[#13ec37] underline decoration-[#13ec37]/50">INVISÍVEL?</span>
+                  SEU NEGÓCIO ESTÁ <span className="text-indigo-400 underline decoration-indigo-500/50">INVISÍVEL?</span>
                 </h3>
-                <button className="group flex items-center justify-center size-20 md:size-24 rounded-full bg-[#13ec37] text-[#102213] shadow-[0_0_30px_rgba(19,236,55,0.4)] hover:scale-110 transition-transform">
+                <button className="group flex items-center justify-center size-20 md:size-24 rounded-full bg-indigo-600 text-white shadow-[0_0_30px_rgba(79,70,229,0.4)] hover:scale-110 transition-transform">
                   <Play className="w-10 h-10 md:w-12 md:h-12 fill-current" />
                 </button>
                 <p className="text-white/70 mt-8 text-sm md:text-base font-medium flex items-center gap-2">
-                  <Volume2 className="text-[#13ec37] w-4 h-4" />
+                  <Volume2 className="text-indigo-400 w-4 h-4" />
                   Clique para ligar o som e começar
                 </p>
               </div>
@@ -53,7 +52,7 @@ export function Sales() {
             {/* Video Controls Mockup */}
             <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden mb-2">
-                <div className="bg-[#13ec37] h-full w-1/3"></div>
+                <div className="bg-indigo-500 h-full w-1/3"></div>
               </div>
               <div className="flex items-center justify-between text-[10px] text-white/60 font-medium">
                 <span>12:45 / 35:20</span>
@@ -65,13 +64,13 @@ export function Sales() {
 
         {/* CTA Section */}
         <div className="mt-12 flex flex-col items-center gap-6">
-          <div className="w-full max-w-2xl bg-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl border border-[#13ec37]/20 relative overflow-hidden">
+          <div className="w-full max-w-2xl bg-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl border border-indigo-500/20 relative overflow-hidden">
             <div className="absolute top-0 right-0 p-4 opacity-5">
-              <Package className="w-32 h-32 text-[#13ec37]" />
+              <Package className="w-32 h-32 text-indigo-500" />
             </div>
             
             <h3 className="text-2xl font-black mb-8 flex items-center gap-3 text-white">
-              <Package className="text-[#13ec37] w-8 h-8" />
+              <Package className="text-indigo-500 w-8 h-8" />
               TUDO QUE ESTÁ INCLUÍDO:
             </h3>
             
@@ -82,11 +81,10 @@ export function Sales() {
                 "Checklist campanha passo a passo",
                 "Calculadora de investimento",
                 "Comunidade WhatsApp exclusiva",
-                "Acesso vitalício",
                 "Atualizações gratuitas"
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-slate-300 font-medium">
-                  <ShieldCheck className="text-[#13ec37] w-5 h-5 shrink-0" />
+                  <ShieldCheck className="text-indigo-500 w-5 h-5 shrink-0" />
                   {item}
                 </li>
               ))}
@@ -99,7 +97,7 @@ export function Sales() {
                 <span className="text-slate-400 font-bold">ou 12x R$ 19,70</span>
               </div>
               
-              <a className="w-full bg-[#13ec37] hover:bg-[#13ec37]/90 text-[#102213] py-6 rounded-full text-xl md:text-2xl font-black tracking-tight shadow-[0_20px_40px_rgba(19,236,55,0.3)] hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" href="#">
+              <a className="w-full bg-indigo-600 hover:bg-indigo-500 text-white py-6 rounded-full text-xl md:text-2xl font-black tracking-tight shadow-[0_20px_40px_rgba(79,70,229,0.3)] hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" href="#">
                 <Zap className="w-6 h-6 fill-current" />
                 ATIVAR MEU SISTEMA AGORA
               </a>
@@ -120,13 +118,13 @@ export function Sales() {
       </header>
 
       {/* Social Proof Section */}
-      <section className="bg-[#13ec37]/5 py-20 border-y border-[#13ec37]/10">
+      <section className="bg-indigo-500/5 py-20 border-y border-indigo-500/10">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">Quem aplica, colhe resultados reais</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-slate-900 p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
-              <div className="flex gap-1 text-[#13ec37] mb-4">
+            <div className="bg-slate-900 p-8 rounded-xl border border-indigo-500/10 shadow-sm">
+              <div className="flex gap-1 text-indigo-400 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-slate-400 italic mb-6 leading-relaxed">
@@ -138,13 +136,13 @@ export function Sales() {
                 </div>
                 <div>
                   <p className="font-bold text-sm text-white">Ricardo Mendes</p>
-                  <p className="text-xs text-[#13ec37] font-medium">Estrategista Digital</p>
+                  <p className="text-xs text-indigo-400 font-medium">Estrategista Digital</p>
                 </div>
               </div>
             </div>
             {/* Testimonial 2 */}
-            <div className="bg-slate-900 p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
-              <div className="flex gap-1 text-[#13ec37] mb-4">
+            <div className="bg-slate-900 p-8 rounded-xl border border-indigo-500/10 shadow-sm">
+              <div className="flex gap-1 text-indigo-400 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-slate-400 italic mb-6 leading-relaxed">
@@ -156,13 +154,13 @@ export function Sales() {
                 </div>
                 <div>
                   <p className="font-bold text-sm text-white">Mariana Silva</p>
-                  <p className="text-xs text-[#13ec37] font-medium">Mentora de Negócios</p>
+                  <p className="text-xs text-indigo-400 font-medium">Mentora de Negócios</p>
                 </div>
               </div>
             </div>
             {/* Testimonial 3 */}
-            <div className="bg-slate-900 p-8 rounded-xl border border-[#13ec37]/10 shadow-sm">
-              <div className="flex gap-1 text-[#13ec37] mb-4">
+            <div className="bg-slate-900 p-8 rounded-xl border border-indigo-500/10 shadow-sm">
+              <div className="flex gap-1 text-indigo-400 mb-4">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-slate-400 italic mb-6 leading-relaxed">
@@ -174,7 +172,7 @@ export function Sales() {
                 </div>
                 <div>
                   <p className="font-bold text-sm text-white">Pedro Albuquerque</p>
-                  <p className="text-xs text-[#13ec37] font-medium">Dono de Agência</p>
+                  <p className="text-xs text-indigo-400 font-medium">Dono de Agência</p>
                 </div>
               </div>
             </div>
@@ -212,10 +210,10 @@ export function Sales() {
               a: "Você tem 7 dias de garantia. Se não gostar, devolvemos 100%."
             }
           ].map((item, i) => (
-            <details key={i} className="group bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden transition-all duration-300 open:shadow-lg open:border-[#13ec37]/30">
+            <details key={i} className="group bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden transition-all duration-300 open:shadow-lg open:border-indigo-500/30">
               <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-white list-none">
                 {item.q}
-                <Zap className="w-5 h-5 text-[#13ec37] transition-transform duration-300 group-open:rotate-180" />
+                <Zap className="w-5 h-5 text-indigo-500 transition-transform duration-300 group-open:rotate-180" />
               </summary>
               <div className="px-6 pb-6 text-slate-400 leading-relaxed">
                 {item.a}
@@ -226,7 +224,7 @@ export function Sales() {
       </section>
 
       {/* Trust Seals & Secure Section */}
-      <footer className="py-12 border-t border-[#13ec37]/10">
+      <footer className="py-12 border-t border-indigo-500/10">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="flex justify-center gap-8 mb-8 opacity-40 grayscale hover:grayscale-0 transition-all">
             <CreditCard className="w-10 h-10" />
@@ -236,7 +234,7 @@ export function Sales() {
           </div>
           <p className="text-xs text-slate-500">
             © 2024 Cliente Todo Dia. Todos os direitos reservados. <br/>
-            Este site não faz parte do Facebook Inc. ou Google LLC.
+            Este site não faz parte do Facebook Inc. or Google LLC.
           </p>
         </div>
       </footer>

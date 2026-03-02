@@ -59,11 +59,11 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
             <p className="text-slate-400 text-sm font-medium leading-normal uppercase tracking-wider">
               Questão {currentStep} de {totalSteps}
             </p>
-            <span className="text-[#13ec37] font-bold text-sm">{Math.round(progress)}%</span>
+            <span className="text-indigo-400 font-bold text-sm">{Math.round(progress)}%</span>
           </div>
           <div className="h-2 w-full rounded-full bg-slate-800 overflow-hidden">
             <div 
-              className="h-full rounded-full bg-[#13ec37] transition-all duration-500 ease-out shadow-[0_0_10px_rgba(19,236,55,0.4)]" 
+              className="h-full rounded-full bg-indigo-500 transition-all duration-500 ease-out shadow-[0_0_10px_rgba(79,70,229,0.4)]" 
               style={{ width: `${progress}%` }}
             ></div>
           </div>
@@ -89,8 +89,8 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
                 key={idx}
                 onClick={() => setSelectedOption(option)}
                 className={cn(
-                  "group relative flex flex-col justify-end p-4 h-40 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#13ec37] focus:ring-offset-2",
-                  selectedOption === option ? "ring-2 ring-[#13ec37] ring-offset-2" : ""
+                  "group relative flex flex-col justify-end p-4 h-40 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2",
+                  selectedOption === option ? "ring-2 ring-indigo-500 ring-offset-2" : ""
                 )}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
@@ -101,7 +101,7 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
                 <div className="relative z-20 flex flex-col gap-2 items-start">
                   <div className={cn(
                     "p-2 rounded-lg backdrop-blur-sm text-slate-900 transition-colors",
-                    selectedOption === option ? "bg-[#13ec37]/90" : "bg-white/90 group-hover:bg-[#13ec37]/90"
+                    selectedOption === option ? "bg-indigo-400/90" : "bg-white/90 group-hover:bg-indigo-400/90"
                   )}>
                     {getIcon(option.icon)}
                   </div>
@@ -116,22 +116,22 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
               <label 
                 key={idx}
                 className={cn(
-                  "group relative flex items-center gap-4 p-5 rounded-xl border-2 bg-zinc-900 shadow-sm hover:border-[#13ec37]/50 hover:shadow-md cursor-pointer transition-all duration-200",
-                  selectedOption === option ? "border-[#13ec37] bg-[#13ec37]/5 shadow-lg" : "border-transparent"
+                  "group relative flex items-center gap-4 p-5 rounded-xl border-2 bg-zinc-900 shadow-sm hover:border-indigo-500/50 hover:shadow-md cursor-pointer transition-all duration-200",
+                  selectedOption === option ? "border-indigo-500 bg-indigo-500/5 shadow-lg" : "border-transparent"
                 )}
               >
                 <div className="relative flex items-center justify-center shrink-0">
                   <input 
                     type="radio" 
                     name="question_option" 
-                    className="peer h-6 w-6 appearance-none rounded-full border-2 border-slate-700 checked:border-[#13ec37] focus:ring-0 focus:ring-offset-0 transition-colors"
+                    className="peer h-6 w-6 appearance-none rounded-full border-2 border-slate-700 checked:border-indigo-500 focus:ring-0 focus:ring-offset-0 transition-colors"
                     checked={selectedOption === option}
                     onChange={() => setSelectedOption(option)}
                   />
-                  <div className="absolute inset-0 m-auto h-3 w-3 rounded-full bg-[#13ec37] scale-0 peer-checked:scale-100 transition-transform"></div>
+                  <div className="absolute inset-0 m-auto h-3 w-3 rounded-full bg-indigo-500 scale-0 peer-checked:scale-100 transition-transform"></div>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-bold text-white text-lg group-hover:text-[#0fb82a] transition-colors">
+                  <span className="font-bold text-white text-lg group-hover:text-indigo-400 transition-colors">
                     {option.label}
                   </span>
                 </div>
@@ -146,7 +146,7 @@ export function QuizQuestion({ question, currentStep, totalSteps, onNext, onBack
         <button 
           onClick={handleNext}
           disabled={!selectedOption}
-          className="w-full bg-[#13ec37] text-slate-900 text-base font-bold py-4 px-6 rounded-full hover:bg-green-400 active:bg-green-500 transition-colors shadow-lg shadow-[#13ec37]/20 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-indigo-600 text-white text-base font-bold py-4 px-6 rounded-full hover:bg-indigo-500 active:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Continuar
           <ArrowRight className="w-5 h-5" />
